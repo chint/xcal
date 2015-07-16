@@ -681,3 +681,3170 @@ Undefined index: readonly at E:\xampp\htdocs\xcal\codebase\connector\scheduler_c
 
 Done in 0.12629079818726s
 
+
+
+====================================
+Log started, 15/07/2015 06:50:41
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.13198685646057s
+
+
+
+====================================
+Log started, 15/07/2015 06:50:50
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436979048338_start_date => 2015-07-08 00:00
+1436979048338_end_date => 2015-07-08 00:05
+1436979048338_text => New event
+1436979048338_id => 1436979048338
+1436979048338_event_pid => 
+1436979048338_event_length => 
+1436979048338_rec_pattern => 
+1436979048338_rec_type => 
+1436979048338_event_location => 
+1436979048338_!nativeeditor_status => inserted
+ids => 1436979048338
+
+Row data [1436979048338]
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-08 00:00
+end_date => 2015-07-08 00:05
+event_name => New event
+event_id => 1436979048338
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`c_id`) VALUES ('2015-07-08 00:00','2015-07-08 00:05','New event','','','','','','','','','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436979048338; tid:145;
+
+Done in 0.28250694274902s
+
+
+
+====================================
+Log started, 15/07/2015 06:51:09
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.037298917770386s
+
+
+
+====================================
+Log started, 15/07/2015 06:58:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.033592939376831s
+
+
+
+====================================
+Log started, 15/07/2015 07:06:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.035056114196777s
+
+
+
+====================================
+Log started, 15/07/2015 07:07:04
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436980017828_start_date => 2015-07-01 00:00
+1436980017828_end_date => 2015-07-01 00:05
+1436980017828_text => New event
+1436980017828_id => 1436980017828
+1436980017828_event_pid => 
+1436980017828_event_length => 
+1436980017828_rec_pattern => 
+1436980017828_rec_type => 
+1436980017828_event_location => 
+1436980017828_!nativeeditor_status => inserted
+ids => 1436980017828
+
+Row data [1436980017828]
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-01 00:00
+end_date => 2015-07-01 00:05
+event_name => New event
+event_id => 1436980017828
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`c_id`) VALUES ('2015-07-01 00:00','2015-07-01 00:05','New event','','','','','','','','','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436980017828; tid:146;
+
+Done in 0.1743950843811s
+
+
+
+====================================
+Log started, 15/07/2015 07:07:34
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039755821228027s
+
+
+
+====================================
+Log started, 15/07/2015 07:08:33
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.021197080612183s
+
+
+
+====================================
+Log started, 15/07/2015 07:08:45
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039947032928467s
+
+
+
+====================================
+Log started, 15/07/2015 07:09:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.029508113861084s
+
+
+
+====================================
+Log started, 15/07/2015 08:22:06
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.053786993026733s
+
+
+
+====================================
+Log started, 15/07/2015 08:31:52
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.067181825637817s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:14
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.0349280834198s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:15
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.047283172607422s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:16
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039371013641357s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:16
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.055001020431519s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:18
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.044620990753174s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:38
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.046818017959595s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:39
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.045975923538208s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:39
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.043431997299194s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:40
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.044606924057007s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:41
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.036103963851929s
+
+
+
+====================================
+Log started, 15/07/2015 08:32:49
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.031346082687378s
+
+
+
+====================================
+Log started, 15/07/2015 08:33:28
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039893865585327s
+
+
+
+====================================
+Log started, 15/07/2015 08:33:51
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.03308892250061s
+
+
+
+====================================
+Log started, 15/07/2015 08:34:46
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.053005933761597s
+
+
+
+====================================
+Log started, 15/07/2015 08:35:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.043630123138428s
+
+
+
+====================================
+Log started, 15/07/2015 08:38:18
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.036231994628906s
+
+
+
+====================================
+Log started, 15/07/2015 08:42:26
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436985498024_start_date => 2015-07-15 00:00
+1436985498024_end_date => 2015-07-15 01:45
+1436985498024_text => New event
+1436985498024_id => 1436985498024
+1436985498024_event_pid => 
+1436985498024_event_length => 
+1436985498024_rec_pattern => 
+1436985498024_rec_type => 
+1436985498024_!nativeeditor_status => inserted
+ids => 1436985498024
+
+Row data [1436985498024]
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+event_id => 1436985498024
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`c_id`) VALUES ('2015-07-15 00:00','2015-07-15 01:45','New event','','','','','','','','','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436985498024; tid:147;
+
+Done in 0.21515607833862s
+
+
+
+====================================
+Log started, 15/07/2015 08:42:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436985498028_start_date => 2015-07-15 01:55
+1436985498028_end_date => 2015-07-15 04:10
+1436985498028_text => New event
+1436985498028_id => 1436985498028
+1436985498028_event_pid => 
+1436985498028_event_length => 
+1436985498028_rec_pattern => 
+1436985498028_rec_type => 
+1436985498028_!nativeeditor_status => updated
+ids => 1436985498028
+
+Row data [1436985498028]
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:10
+event_name => New event
+event_id => 1436985498028
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => updated
+c_id => 3
+
+UPDATE events SET `start_date`='2015-07-15 01:55',`end_date`='2015-07-15 04:10',`event_name`='New event',`rec_type`='',`event_pid`='',`event_length`='',`details`='',`event_location`='',`lat`='',`lng`='',`readonly`='',`c_id`='3' WHERE `event_id`='1436985498028' AND (( c_id = 3))
+
+Edit operation finished
+0 => action:updated; sid:1436985498028; tid:1436985498028;
+
+Done in 0.1441638469696s
+
+
+
+====================================
+Log started, 15/07/2015 08:42:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.03670597076416s
+
+
+
+====================================
+Log started, 15/07/2015 08:43:09
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436985779383_start_date => 2015-07-15 01:55
+1436985779383_end_date => 2015-07-15 04:30
+1436985779383_text => New event
+1436985779383_id => 1436985779383
+1436985779383_event_pid => 
+1436985779383_event_length => 
+1436985779383_rec_pattern => 
+1436985779383_rec_type => 
+1436985779383_!nativeeditor_status => inserted
+ids => 1436985779383
+
+Row data [1436985779383]
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: event_location
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+event_id => 1436985779383
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`c_id`) VALUES ('2015-07-15 01:55','2015-07-15 04:30','New event','','','','','','','','','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436985779383; tid:148;
+
+Done in 0.23609781265259s
+
+
+
+====================================
+Log started, 15/07/2015 08:43:12
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.051032781600952s
+
+
+
+====================================
+Log started, 15/07/2015 08:43:17
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+148_id => 148
+148_start_date => 2015-07-15 01:55
+148_end_date => 2015-07-15 04:30
+148_text => New event
+148_rec_type => 
+148_event_pid => 0
+148_event_length => 0
+148_details => 
+148_event_location => 
+148_lat => 
+148_lng => 
+148_readonly => 0
+148_!nativeeditor_status => deleted
+ids => 148
+
+Row data [148]
+event_id => 148
+start_date => 2015-07-15 01:55
+end_date => 2015-07-15 04:30
+event_name => New event
+rec_type => 
+event_pid => 0
+event_length => 0
+details => 
+event_location => 
+lat => 
+lng => 
+readonly => 0
+!nativeeditor_status => deleted
+
+adding field: c_id, with value: 3
+
+DELETE FROM events WHERE `event_id`='148' AND (( c_id = 3))
+
+Edit operation finished
+0 => action:deleted; sid:148; tid:148;
+
+Done in 0.070906162261963s
+
+
+
+====================================
+Log started, 15/07/2015 08:43:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+147_id => 147
+147_start_date => 2015-07-15 00:00
+147_end_date => 2015-07-15 01:45
+147_text => New event
+147_rec_type => 
+147_event_pid => 0
+147_event_length => 0
+147_details => 
+147_event_location => 
+147_lat => 
+147_lng => 
+147_readonly => 0
+147_!nativeeditor_status => deleted
+ids => 147
+
+Row data [147]
+event_id => 147
+start_date => 2015-07-15 00:00
+end_date => 2015-07-15 01:45
+event_name => New event
+rec_type => 
+event_pid => 0
+event_length => 0
+details => 
+event_location => 
+lat => 
+lng => 
+readonly => 0
+!nativeeditor_status => deleted
+
+adding field: c_id, with value: 3
+
+DELETE FROM events WHERE `event_id`='147' AND (( c_id = 3))
+
+Edit operation finished
+0 => action:deleted; sid:147; tid:147;
+
+Done in 0.067423820495605s
+
+
+
+====================================
+Log started, 15/07/2015 08:44:28
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.042172908782959s
+
+
+
+====================================
+Log started, 15/07/2015 08:46:41
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.044540882110596s
+
+
+
+====================================
+Log started, 15/07/2015 08:48:00
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.042371034622192s
+
+
+
+====================================
+Log started, 15/07/2015 08:49:41
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.043926954269409s
+
+
+
+====================================
+Log started, 15/07/2015 08:52:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.040472030639648s
+
+
+
+====================================
+Log started, 15/07/2015 08:52:36
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.032798051834106s
+
+
+
+====================================
+Log started, 15/07/2015 08:52:37
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.032023191452026s
+
+
+
+====================================
+Log started, 15/07/2015 08:52:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.044329881668091s
+
+
+
+====================================
+Log started, 15/07/2015 08:53:27
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.043910980224609s
+
+
+
+====================================
+Log started, 15/07/2015 08:54:21
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.048395872116089s
+
+
+
+====================================
+Log started, 15/07/2015 08:54:43
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.037873029708862s
+
+
+
+====================================
+Log started, 15/07/2015 08:57:00
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.036291122436523s
+
+
+
+====================================
+Log started, 15/07/2015 08:59:02
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.035742044448853s
+
+
+
+====================================
+Log started, 15/07/2015 08:59:09
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.034296989440918s
+
+
+
+====================================
+Log started, 15/07/2015 09:01:44
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.028043031692505s
+
+
+
+====================================
+Log started, 15/07/2015 09:01:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.037770986557007s
+
+
+
+====================================
+Log started, 15/07/2015 09:02:12
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039308071136475s
+
+
+
+====================================
+Log started, 15/07/2015 09:10:03
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.068051815032959s
+
+
+
+====================================
+Log started, 15/07/2015 09:10:39
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.038856983184814s
+
+
+
+====================================
+Log started, 15/07/2015 09:25:06
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.033121109008789s
+
+
+
+====================================
+Log started, 15/07/2015 09:26:25
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.021745920181274s
+
+
+
+====================================
+Log started, 15/07/2015 09:26:29
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436988386415_start_date => 2015-07-10 00:00
+1436988386415_end_date => 2015-07-10 00:05
+1436988386415_text => New event
+1436988386415_id => 1436988386415
+1436988386415_event_pid => 
+1436988386415_event_length => 
+1436988386415_rec_pattern => 
+1436988386415_rec_type => 
+1436988386415_event_location => 
+1436988386415_priority => 3
+1436988386415_!nativeeditor_status => inserted
+ids => 1436988386415
+
+Row data [1436988386415]
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1436988386415
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`c_id`) VALUES ('2015-07-10 00:00','2015-07-10 00:05','New event','','','','','','','','','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436988386415; tid:149;
+
+Done in 0.15415906906128s
+
+
+
+====================================
+Log started, 15/07/2015 09:26:32
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.037070989608765s
+
+
+
+====================================
+Log started, 15/07/2015 09:26:47
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.034785985946655s
+
+
+
+====================================
+Log started, 15/07/2015 09:27:17
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.033473014831543s
+
+
+
+====================================
+Log started, 15/07/2015 09:28:15
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.032386064529419s
+
+
+
+====================================
+Log started, 15/07/2015 09:28:18
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+149_id => 149
+149_start_date => 2015-07-10 00:00
+149_end_date => 2015-07-10 00:05
+149_text => New event
+149_rec_type => 
+149_event_pid => 0
+149_event_length => 0
+149_details => 
+149_event_location => 
+149_lat => 
+149_lng => 
+149_readonly => 0
+149_priority => 3
+149_rec_pattern => 
+149_!nativeeditor_status => updated
+ids => 149
+
+Row data [149]
+event_id => 149
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+rec_type => 
+event_pid => 0
+event_length => 0
+details => 
+event_location => 
+lat => 
+lng => 
+readonly => 0
+priority => 3
+rec_pattern => 
+!nativeeditor_status => updated
+
+adding field: c_id, with value: 3
+
+UPDATE events SET `start_date`='2015-07-10 00:00',`end_date`='2015-07-10 00:05',`event_name`='New event',`rec_type`='',`event_pid`='0',`event_length`='0',`details`='',`event_location`='',`lat`='',`lng`='',`readonly`='0',`priority`='3',`c_id`='3' WHERE `event_id`='149' AND (( c_id = 3))
+
+Edit operation finished
+0 => action:updated; sid:149; tid:149;
+
+Done in 0.2376880645752s
+
+
+
+====================================
+Log started, 15/07/2015 09:28:34
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.034039974212646s
+
+
+
+====================================
+Log started, 15/07/2015 09:28:46
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1436988515361_start_date => 2015-07-14 00:00
+1436988515361_end_date => 2015-07-14 00:05
+1436988515361_text => New event
+1436988515361_id => 1436988515361
+1436988515361_event_pid => 
+1436988515361_event_length => 
+1436988515361_rec_pattern => 
+1436988515361_rec_type => 
+1436988515361_event_location => 
+1436988515361_priority => 2
+1436988515361_!nativeeditor_status => inserted
+ids => 1436988515361
+
+Row data [1436988515361]
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-14 00:00
+end_date => 2015-07-14 00:05
+event_name => New event
+event_id => 1436988515361
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,`c_id`) VALUES ('2015-07-14 00:00','2015-07-14 00:05','New event','','','','','','','','','2','3')
+
+Edit operation finished
+0 => action:inserted; sid:1436988515361; tid:150;
+
+Done in 0.15896821022034s
+
+
+
+====================================
+Log started, 15/07/2015 09:28:48
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.032871007919312s
+
+
+
+====================================
+Log started, 16/07/2015 09:59:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.1167938709259s
+
+
+
+====================================
+Log started, 16/07/2015 09:59:29
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.031188011169434s
+
+
+
+====================================
+Log started, 16/07/2015 09:59:56
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.03662896156311s
+
+
+
+====================================
+Log started, 16/07/2015 10:00:30
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.028719186782837s
+
+
+
+====================================
+Log started, 16/07/2015 10:00:43
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.039268970489502s
+
+
+
+====================================
+Log started, 16/07/2015 10:01:04
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.022051095962524s
+
+
+
+====================================
+Log started, 16/07/2015 10:01:13
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.043900966644287s
+
+
+
+====================================
+Log started, 16/07/2015 10:28:21
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.074405193328857s
+
+
+
+====================================
+Log started, 16/07/2015 10:31:51
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1437035506446_start_date => 2015-07-09 00:00
+1437035506446_end_date => 2015-07-09 00:05
+1437035506446_text => New event
+1437035506446_id => 1437035506446
+1437035506446_event_pid => 
+1437035506446_event_length => 
+1437035506446_rec_pattern => 
+1437035506446_rec_type => 
+1437035506446_event_location => 
+1437035506446_priority => 3
+1437035506446_!nativeeditor_status => inserted
+ids => 1437035506446
+
+Row data [1437035506446]
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-09 00:00
+end_date => 2015-07-09 00:05
+event_name => New event
+event_id => 1437035506446
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 3
+!nativeeditor_status => inserted
+c_id => 3
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,`c_id`) VALUES ('2015-07-09 00:00','2015-07-09 00:05','New event','','','','','','','','','3','3')
+
+Edit operation finished
+0 => action:inserted; sid:1437035506446; tid:151;
+
+Done in 0.283940076828s
+
+
+
+====================================
+Log started, 16/07/2015 10:31:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 3)
+
+Done in 0.037827014923096s
+
+
+
+====================================
+Log started, 16/07/2015 10:40:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:34:39
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:35:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:36:14
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:36:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1437039383128_start_date => 2015-07-16 00:00
+1437039383128_end_date => 2015-07-16 00:05
+1437039383128_text => New event
+1437039383128_id => 1437039383128
+1437039383128_event_pid => 
+1437039383128_event_length => 
+1437039383128_rec_pattern => 
+1437039383128_rec_type => 
+1437039383128_event_location => 
+1437039383128_priority => undefined
+1437039383128_!nativeeditor_status => inserted
+ids => 1437039383128
+
+Row data [1437039383128]
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-16 00:00
+end_date => 2015-07-16 00:05
+event_name => New event
+event_id => 1437039383128
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => undefined
+!nativeeditor_status => inserted
+c_id => 2
+
+INSERT INTO events,cus(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,`c_id`) VALUES ('2015-07-16 00:00','2015-07-16 00:05','New event','','','','','','','','','undefined','2')
+
+exception 'Exception' with message 'MySQL operation failed
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cus(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`' at line 1' in E:\xampp\htdocs\xcal\codebase\connector\db_common.php:1099
+Stack trace:
+#0 E:\xampp\htdocs\xcal\codebase\connector\db_common.php(721): MySQLDBDataWrapper->query('INSERT INTO eve...')
+#1 [internal function]: DBDataWrapper->insert(Object(DataAction), Object(DataRequestConfig))
+#2 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(221): call_user_func(Array, Object(DataAction), Object(DataRequestConfig))
+#3 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(168): DataProcessor->check_exts(Object(DataAction), 'insert')
+#4 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(97): DataProcessor->inner_process(Object(DataAction))
+#5 E:\xampp\htdocs\xcal\codebase\connector\base_connector.php(492): DataProcessor->process(Object(DataConfig), Object(DataRequestConfig))
+#6 E:\xampp\htdocs\xcal\codebase\connector\base_connector.php(448): Connector->render()
+#7 E:\xampp\htdocs\xcal\data\connector.php(38): Connector->render_sql('select * from e...', 'event_id', 'start_date,end_...')
+#8 {main}
+
+Edit operation finished
+0 => action:error; sid:1437039383128; tid:1437039383128;
+
+Done in 0.13811922073364s
+
+
+
+====================================
+Log started, 16/07/2015 11:36:27
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:36:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:42:39
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events,cus WHERE ( c_id = 2)
+
+!!!Uncaught Exception
+Code: 0
+Message: MySQL operation failed
+Column 'c_id' in where clause is ambiguous
+
+
+
+====================================
+Log started, 16/07/2015 11:43:17
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Done in 0.13141918182373s
+
+
+
+====================================
+Log started, 16/07/2015 11:43:43
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Done in 0.14548587799072s
+
+
+
+====================================
+Log started, 16/07/2015 11:43:56
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Undefined index: skin at E:\xampp\htdocs\xcal\codebase\connector\scheduler_connector.php line 23
+
+Done in 0.12738800048828s
+
+
+
+====================================
+Log started, 16/07/2015 11:44:01
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1437039838916_start_date => 2015-07-10 00:00
+1437039838916_end_date => 2015-07-10 00:05
+1437039838916_text => New event
+1437039838916_id => 1437039838916
+1437039838916_event_pid => 
+1437039838916_event_length => 
+1437039838916_rec_pattern => 
+1437039838916_rec_type => 
+1437039838916_event_location => 
+1437039838916_priority => 2
+1437039838916_!nativeeditor_status => inserted
+ids => 1437039838916
+
+Row data [1437039838916]
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: skin
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: skin
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039838916
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,`skin`,`c_id`) VALUES ('2015-07-10 00:00','2015-07-10 00:05','New event','','','','','','','','','2','','2')
+
+exception 'Exception' with message 'MySQL operation failed
+Unknown column 'skin' in 'field list'' in E:\xampp\htdocs\xcal\codebase\connector\db_common.php:1099
+Stack trace:
+#0 E:\xampp\htdocs\xcal\codebase\connector\db_common.php(721): MySQLDBDataWrapper->query('INSERT INTO eve...')
+#1 [internal function]: DBDataWrapper->insert(Object(DataAction), Object(DataRequestConfig))
+#2 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(221): call_user_func(Array, Object(DataAction), Object(DataRequestConfig))
+#3 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(168): DataProcessor->check_exts(Object(DataAction), 'insert')
+#4 E:\xampp\htdocs\xcal\codebase\connector\dataprocessor.php(97): DataProcessor->inner_process(Object(DataAction))
+#5 E:\xampp\htdocs\xcal\codebase\connector\base_connector.php(492): DataProcessor->process(Object(DataConfig), Object(DataRequestConfig))
+#6 E:\xampp\htdocs\xcal\codebase\connector\base_connector.php(448): Connector->render()
+#7 E:\xampp\htdocs\xcal\data\connector.php(38): Connector->render_sql('select * from e...', 'event_id', 'start_date,end_...')
+#8 {main}
+
+Edit operation finished
+0 => action:error; sid:1437039838916; tid:1437039838916;
+
+Done in 0.17876696586609s
+
+
+
+====================================
+Log started, 16/07/2015 11:44:54
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Done in 0.037584066390991s
+
+
+
+====================================
+Log started, 16/07/2015 11:44:56
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+DataProcessor object initialized
+1437039894981_start_date => 2015-07-10 00:00
+1437039894981_end_date => 2015-07-10 00:05
+1437039894981_text => New event
+1437039894981_id => 1437039894981
+1437039894981_event_pid => 
+1437039894981_event_length => 
+1437039894981_rec_pattern => 
+1437039894981_rec_type => 
+1437039894981_event_location => 
+1437039894981_priority => 2
+1437039894981_!nativeeditor_status => inserted
+ids => 1437039894981
+
+Row data [1437039894981]
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+
+adding field: c_id, with value: 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: details
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lat
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: lng
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+Incorrect field name used: readonly
+
+data
+start_date => 2015-07-10 00:00
+end_date => 2015-07-10 00:05
+event_name => New event
+event_id => 1437039894981
+event_pid => 
+event_length => 
+rec_pattern => 
+rec_type => 
+event_location => 
+priority => 2
+!nativeeditor_status => inserted
+c_id => 2
+
+INSERT INTO events(`start_date`,`end_date`,`event_name`,`rec_type`,`event_pid`,`event_length`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,`c_id`) VALUES ('2015-07-10 00:00','2015-07-10 00:05','New event','','','','','','','','','2','2')
+
+Edit operation finished
+0 => action:inserted; sid:1437039894981; tid:152;
+
+Done in 0.18391990661621s
+
+
+
+====================================
+Log started, 16/07/2015 11:44:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Done in 0.043341875076294s
+
+
+
+====================================
+Log started, 16/07/2015 11:45:17
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Done in 0.028102874755859s
+
+
+
+====================================
+Log started, 16/07/2015 11:45:37
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 20
+
+SELECT  * FROM events WHERE ( c_id = 2)
+
+Done in 0.029199123382568s
+

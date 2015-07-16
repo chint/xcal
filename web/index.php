@@ -17,16 +17,73 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script src="../codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
 	  <script src="../codebase/ext/dhtmlxscheduler_map_view.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" href="../codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!-- <link rel="stylesheet" href="../codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
 	<script src='../codebase/ext/dhtmlxscheduler_minical.js' type="text/javascript"></script>
 	<script src="../codebase/ext/dhtmlxscheduler_year_view.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../codebase/ext/dhtmlxscheduler_agenda_view.js" type="text/javascript" charset="utf-8"></script>
 	<script src='../codebase/ext/dhtmlxscheduler_recurring.js' type="text/javascript"></script>
 	<script src="../codebase/ext/dhtmlxscheduler_pdf.js" type="text/javascript" charset="utf-8"></script>
-
-		  <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script>
+<script src="../codebase/ext/dhtmlxscheduler_editors.js"></script>
+		  <!-- // <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script> -->
 
  <!-- <link rel="stylesheet" href="../codebase/dhtmlxscheduler_flat.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
+
+<?php
+
+session_start();
+ 
+
+include('../database_connection.php');
+
+$c_id=$_SESSION["login"];
+
+$result = mysqli_query($bd, "SELECT skin FROM `calendar`.`cus` WHERE `c_id` = ".$c_id);
+
+if ($row = mysqli_fetch_array($result)) {
+
+$skin = $row['skin'];
+
+
+   
+if ($skin==1)
+{
+
+ ?>
+ 
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler_flat.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
+   
+<?php 
+ }
+ else if($skin==2)
+{
+
+?>   
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler_glossy.css" type="text/css" media="screen">
+
+ <?php
+}
+else if($skin==3)
+{
+
+ ?> 
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler_classic.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+<?php
+}
+
+else
+{
+?> 
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<?php
+}
+}
+else {
+ echo "no results found";
+}
+mysqli_close($bd);
+   
+  ?> 
 
   <script>
             $(function(){
@@ -34,7 +91,7 @@
   
   });        </script>
 
-   <style type="text/css" media="screen">
+<style type="text/css" media="screen">
 	html, body{
 		margin:1px;
 		padding:1px;
@@ -43,6 +100,54 @@
 	
 
 	}	
+	.dhx_cal_event div.dhx_footer,
+		.dhx_cal_event.past_event div.dhx_footer,
+		.dhx_cal_event.event_english div.dhx_footer,
+		.dhx_cal_event.event_math div.dhx_footer,
+		.dhx_cal_event.event_science div.dhx_footer{
+			background-color: transparent !important;
+		}
+		.dhx_cal_event .dhx_body{
+			-webkit-transition: opacity 0.1s;
+			transition: opacity 0.1s;
+			opacity: 0.7;
+		}
+		.dhx_cal_event .dhx_title{
+			line-height: 12px;
+		}
+		.dhx_cal_event_line:hover,
+		.dhx_cal_event:hover .dhx_body,
+		.dhx_cal_event.selected .dhx_body,
+		.dhx_cal_event.dhx_cal_select_menu .dhx_body{
+			opacity: 1;
+		}
+
+	
+		
+		.dhx_cal_event.event_math div, .dhx_cal_event_line.event_1{
+			background-color: orange !important;
+			border-color: #a36800 !important;
+		}
+		.dhx_cal_event_clear.event_1{
+			color:orange !important;
+		}
+
+		.dhx_cal_event.event_science div, .dhx_cal_event_line.event_2{
+			background-color: #36BD14 !important;
+			border-color: #698490 !important;
+		}
+		.dhx_cal_event_clear.event_2{
+			color:#36BD14 !important;
+		}
+
+		.dhx_cal_event.event_english div, .dhx_cal_event_line.event_3{
+			background-color: #FC5BD5 !important;
+			border-color: #839595 !important;
+		}
+		.dhx_cal_event_clear.event_3{
+			color:#B82594 !important;
+		}
+	 
 		.dhx_cal_container #scheduler_here {
 			height: 700px;
 			width: 100%;
@@ -53,9 +158,7 @@
 		}
 </style>
 
-   <?php
-session_start();
-   ?>
+   
  
 <script type="text/javascript" charset="utf-8">
 
@@ -73,13 +176,13 @@ session_start();
 //   {  
 // alert("1");
 //      }      }      }); 
-	function readonly_check(id){
-var ev = scheduler.getEvent(id);
-return !ev.readonly;
-}
+// 	function readonly_check(id){
+// var ev = scheduler.getEvent(id);
+// return !ev.readonly;
+// }
 
-scheduler.attachEvent("onClick", readonly_check);
-scheduler.attachEvent("onDblClick", readonly_check);
+// scheduler.attachEvent("onClick", readonly_check);
+// scheduler.attachEvent("onDblClick", readonly_check);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		scheduler.config.xml_date="%Y-%m-%d %H:%i";
@@ -97,15 +200,22 @@ scheduler.attachEvent("onDblClick", readonly_check);
 		scheduler.xy.map_description_width = 400;
 		scheduler.config.map_start = new Date(2014, 8, 1);
 			scheduler.config.map_end = new Date();
-			
+
+			var priorities = [
+    { key: 2, label: 'Private' },
+    { key: 3, label: 'Public' },
+     
+];
+ 
 			scheduler.config.lightbox.sections=[	
 				{ name:"description", height:50, map_to:"text", type:"textarea", focus:true },
 				{ name:"location", height:43, map_to:"event_location", type:"textarea"  },
 				{name:"recurring", height:115, type:"recurring", map_to:"rec_type",button:"recurring"},
+				{ name:"priority", height:58, options:priorities, map_to:"priority", type:"radio", vertical:true},
 				{ name:"time", height:72, type:"time", map_to:"auto"}	
 			]
 			scheduler.config.map_inital_zoom = 8;
-			
+			scheduler.locale.labels.section_priority = 'Priority';
 		// scheduler.attachEvent("onBeforeDrag",block_readonly )
 		// scheduler.attachEvent("onClick",block_readonly )
     
