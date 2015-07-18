@@ -11,10 +11,20 @@
   $("#header").load("../header/header.php"); 
   
   });
+ 
         </script>
-  <div id="header"></div>   
-   <div class="wrap">
-<!-- <iframe height=50 width=100% src="http://localhost/shop/customer\welcome.php" ></iframe> -->
+  <div id="header"></div> 
+
+    <div class="row">
+  <div class="col-md-1 "></div>
+  <div class="col-md-10 ">
+
+ <ol class="breadcrumb">
+    <li><a href="../web">Home</a></li>
+    <li><a href="../usereg/account.php">My Account</a></li>
+    <li>Friends</li>
+ </ol>  
+
 
   <body>
 <script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
@@ -31,7 +41,7 @@
 <div class="well well-sm">
 <table class="table table-bordered">
   <tr> <td>
- <label><h4><a href="accountedit.php">Edit My Account Details</a> </h4></label>
+ <label><h4><a href="sendfriendrequest.php" >Add Friends</a> </h4></label>
  </td> </tr>
   <tr><td>
     <label><h4> <a href="accountorder.php" >Under construction</a> </h4></label>
@@ -47,12 +57,14 @@
 <?php      //send email to friend
 
 session_start();
+include('../checklogin.php');
 require_once "Mail.php";
 include('../database_connection.php'); 
 
 ?>
 
-<div class="row">
+ 
+<div class="row"> 
 <div class="col-md-8"><h3>Friends</h3></div>
 </div>
 
@@ -90,17 +102,14 @@ include('../database_connection.php');
 ?>
 
 
-  </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-1 "></div>
 </div>
 
- 
-
-  
- </div>
- 
-</div>
-
+</body>
    
 </body>
 <div id="footer"></div>

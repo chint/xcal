@@ -223,13 +223,8 @@ echo   '
 
         </div><!--/.navbar-collapse -->
       </div>
-    </nav>
-
-    
- 
- 
-    
-  </body>
+    </nav>   
+</body>
 </html>
 
 	

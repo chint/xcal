@@ -15,26 +15,21 @@
     
   });
         </script>
-  <div id="header"></div>   
-   <div class="wrap">
+  <div id="header"></div> 
 
-<?php
-/* 
-include('../database_connection.php');
-
-session_start();
-if( empty($_SESSION['login']))
-{
-header('Location:../usereg/logreg.php');
-}else{
-$a=$_SESSION['login'];
- } */
- 
-
-?>
-
+  <div class="row">
+  <div class="col-md-1 "></div>
+  <div class="col-md-10 ">
 
  
+
+  <ol class="breadcrumb">
+    <li><a href="../web">Home</a></li>
+    <li><a href="../usereg/account.php">My Account</a></li>
+    <li>Skin</li>
+ </ol>  
+
+<div class="wrap">
 <div class="well well-sm">
 
 <h3>My Account</h3>
@@ -92,22 +87,15 @@ $a=$_SESSION['login'];
   </div>
  
 </div>
-    
-
-
-
- 
 
 
 <?php
-
+ session_start();
+ include('../checklogin.php');
 ?>
   
-  <!-- </div> -->
 
-  
- </div>
- 
+</div>
 </div>
     
 </body>

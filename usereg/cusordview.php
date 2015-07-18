@@ -1,4 +1,10 @@
  <html>
+ <?php
+session_start();
+ 
+include('../checklogin.php');
+
+?>
 
 <link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="stylee1.css">

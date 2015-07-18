@@ -59,6 +59,7 @@
 include('database_connection.php');
 
 session_start();
+include('../checklogin.php');
 if( empty($_SESSION['logins']))
 {
 header('Location:../logorreg/logreg.php');

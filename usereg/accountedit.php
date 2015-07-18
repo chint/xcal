@@ -26,6 +26,7 @@
 include('../database_connection.php');
 
 session_start();
+include('../checklogin.php');
 if( empty($_SESSION['login']))
 {
 header('Location:../usereg/logreg.php');
@@ -40,6 +41,13 @@ if ($row = mysqli_fetch_array($result)) {
 ?>
 
 <script type="text/javascript">
+
+        $(function(){
+  $("#header").load("../header/header.php"); 
+  
+  });
+
+
 $(document).ready(function()//When the dom is ready 
 {
 $("#un").blur(function() 
@@ -159,6 +167,19 @@ return false;
 
 });
 </script>
+
+
+ <div id="header"></div> 
+
+   <div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+
+  <ol class="breadcrumb">
+    <li><a href="../web">Home</a></li>
+    <li><a href="../usereg/account.php">My Account</a></li>
+    <li>Edit Account</li>
+ </ol>   
  
 <div class="well well-sm">
 
@@ -259,6 +280,10 @@ mysqli_close($bd);
   
  </div>
  
+</div>
+
+</div>
+<div class="col-md-1 "></div>
 </div>
     
 </body>

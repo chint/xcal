@@ -13,8 +13,8 @@
    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <!-- // <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    
+     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script src="../codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
 	  <script src="../codebase/ext/dhtmlxscheduler_map_view.js" type="text/javascript" charset="utf-8"></script>
 	<!-- <link rel="stylesheet" href="../codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
@@ -24,7 +24,7 @@
 	<script src='../codebase/ext/dhtmlxscheduler_recurring.js' type="text/javascript"></script>
 	<script src="../codebase/ext/dhtmlxscheduler_pdf.js" type="text/javascript" charset="utf-8"></script>
 <script src="../codebase/ext/dhtmlxscheduler_editors.js"></script>
-		  <!-- // <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script> -->
+	  <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script>
 
  <!-- <link rel="stylesheet" href="../codebase/dhtmlxscheduler_flat.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
 
@@ -37,7 +37,7 @@ include('../database_connection.php');
 
 $c_id=$_SESSION["login"];
 
-$result = mysqli_query($bd, "SELECT skin FROM `calendar`.`cus` WHERE `c_id` = ".$c_id);
+$result = mysqli_query($bd, "SELECT skin FROM `calendar`.`cus` WHERE `c_id` = '$c_id'");
 
 if ($row = mysqli_fetch_array($result)) {
 
@@ -165,25 +165,62 @@ mysqli_close($bd);
 	function init() {
 
  
-// $.ajax({   
-//     type: "POST",  
-//     url: "checksession.php",   
-//       success: function(server_response){  
-//       if(server_response == 0) 
-//   {       window.location="usereg/logreg.php";
-//      }  
-//   else  if(server_response == 1) 
-//   {  
-// alert("1");
-//      }      }      }); 
-// 	function readonly_check(id){
-// var ev = scheduler.getEvent(id);
-// return !ev.readonly;
-// }
+	 scheduler.templates.event_class=function(start, end, event){
+var tag=0;
 
-// scheduler.attachEvent("onClick", readonly_check);
-// scheduler.attachEvent("onDblClick", readonly_check);
+				 var css = "";
+				if(event.Privacy==2 && event.c_id!="<?php echo $c_id;?>") // if event has priority property then special class should be assigned
+					{
+						// event.text="";
+						css += "event_"+event.Privacy;
+	  				scheduler.getEvent(event.id).readonly = true;
+	 				var i= scheduler.getEvent(event.id).c_id;
+	 				//var name=nameFunction(i);
+	 				// alert(i);
+// $.when(nameFunction(i,event)).then(function(res,event){
+     
+//     // alert(cache[ i ]);
+//     // event.text+=res;
+//     // scheduler.getEvent(event.id).event_name=res;
+// // event.text+=res;
+// });
+ // event.text+=i;
+					// alert(tag);
 
+				var desc = scheduler.getEvent(event.id).text;
+			var t=	desc.split(" By:- ");
+
+					// var desc2=desc.split("--");
+					 if(t.length==1  )
+					 {
+					 	// alert(tag);
+					 	event.text  = scheduler.getEvent(event.id).text + " By:- " + event.c_fname;
+					 	
+					 }
+
+					 else
+
+					 {
+
+					 }
+
+
+					
+
+				}else{
+					scheduler.getEvent(event.id).c_id = "<?php echo $c_id ;?>";
+				}
+
+				// if(event.id == scheduler.getState().select_id){
+				// 	css += " selected";
+				// }
+				 
+				return css; // default return
+ 					
+			};
+
+
+		
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		scheduler.config.xml_date="%Y-%m-%d %H:%i";
 		// scheduler.config.prevent_cache = true;
@@ -192,6 +229,8 @@ mysqli_close($bd);
 		 
 		 
 		// scheduler.config.readonly_form = true;
+// scheduler.config.readonly = false;
+
 
 		scheduler.config.include_end_by = true;
 		scheduler.locale.labels.map_tab = "Map";
@@ -201,9 +240,9 @@ mysqli_close($bd);
 		scheduler.config.map_start = new Date(2014, 8, 1);
 			scheduler.config.map_end = new Date();
 
-			var priorities = [
-    { key: 2, label: 'Private' },
-    { key: 3, label: 'Public' },
+			var Privacy = [
+    { key: 1, label: 'Private' },
+    { key: 2, label: 'Public (Visible to your friends)' },
      
 ];
  
@@ -211,7 +250,7 @@ mysqli_close($bd);
 				{ name:"description", height:50, map_to:"text", type:"textarea", focus:true },
 				{ name:"location", height:43, map_to:"event_location", type:"textarea"  },
 				{name:"recurring", height:115, type:"recurring", map_to:"rec_type",button:"recurring"},
-				{ name:"priority", height:58, options:priorities, map_to:"priority", type:"radio", vertical:true},
+				{ name:"Privacy", height:58, options:Privacy, map_to:"Privacy", type:"radio", vertical:true, default_value: "1"},
 				{ name:"time", height:72, type:"time", map_to:"auto"}	
 			]
 			scheduler.config.map_inital_zoom = 8;
@@ -221,10 +260,13 @@ mysqli_close($bd);
     
 	scheduler.init('scheduler_here',new Date(),"month");
 		scheduler.load("../data/connector.php");
-// scheduler.getEvent(126).readonly = true;
+ 
 		var dp = new dataProcessor("../data/connector.php");
 			dp.init(scheduler);
-			 // scheduler.getEvent(126).readonly = true;
+			
+
+			 tag=-1;
+
 		 	}
 
  	function show_minical(){
@@ -262,7 +304,9 @@ $.ajax({
  
      	 if(data[0] == 0) 
   	{        // alert("0");
-  		scheduler.showEvent(data[1],'month');
+  		// scheduler.showEvent(data[1],'month');
+  		scheduler.showLightbox(data[1]);
+
   		document.getElementById("myText").value = "";
      }  
   		else  if(data[0] == 1)  
@@ -299,7 +343,9 @@ $.ajax({
 }
 function closeFunction(dat ) {
 $( "#dialog" ).dialog( "close" );
-scheduler.showEvent(dat,'month')
+// scheduler.showEvent(dat,'month');
+scheduler.showLightbox(dat);
+
 document.getElementById("myText").value = "";
 }
 </script>

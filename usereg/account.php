@@ -12,16 +12,22 @@
   
   });
         </script>
-  <div id="header"></div>   
-   <div class="wrap">
-<!-- <iframe height=50 width=100% src="http://localhost/shop/customer\welcome.php" ></iframe> -->
+  <div id="header"></div> 
+
+   <div class="row">
+  <div class="col-md-1 "></div>
+  <div class="col-md-10 ">
+
+   <ol class="breadcrumb">
+	  <li><a href="../web">Home</a></li>
+	  <li class="active">My Account</li>
+   </ol>  
 
   <body>
- 
+  
 <div class="well well-sm">
-
 <h3>My Dashboard</h3>
-  </div>
+</div>
 
 
   <div class="row">
@@ -32,7 +38,7 @@
  <label><h4><a href="accountedit.php">Edit My Account Details</a> </h4></label>
  </td> </tr>
   <tr><td>
-    <label><h4> <a href="../friends/sendfriendrequest.php" >Add Friends</a> </h4></label>
+    <label><h4> <a href="../friends/friends.php" >My Friends</a> </h4></label>
   </td></tr>
   <tr> <td>
  <label><h4><a href="skin.php">Edit My Skin</a> </h4></label>
@@ -44,11 +50,12 @@
 <?php
 
  session_start();
+ include('../checklogin.php');
 include('../database_connection.php');
 
-// $a=$_SESSION['logins'];
+$a=$_SESSION['login'];
  
- $a=2;
+ // $a=2;
 $result = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_id` = '$a' ");
 
 if ($row = mysqli_fetch_array($result)) {
@@ -83,8 +90,9 @@ if ($row = mysqli_fetch_array($result)) {
 
 <tr><td>  <label class="control-label">User Name : </label></td>
       <td><?php echo $row['un']; ?>  </td></tr>
-<tr><td>  <label class="control-label" type="password">Password : </label></td>
+<!-- <tr><td>  <label class="control-label" type="password">Password : </label></td>
       <td > <input type="password" value="<?php echo $row['pw']; ?>" readonly="readonly">  </td></tr>
+     -->  
 </table>
  
  
@@ -106,12 +114,15 @@ mysqli_close($bd);
   </div>
 </div>
 
+</div>
+<div class="col-md-1 "></div>
+</div>
+</div>
+
  
 
-  
- </div>
  
-</div>
+
 
    
 </body>
