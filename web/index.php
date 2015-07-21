@@ -25,6 +25,8 @@
 	<script src="../codebase/ext/dhtmlxscheduler_pdf.js" type="text/javascript" charset="utf-8"></script>
 <script src="../codebase/ext/dhtmlxscheduler_editors.js"></script>
 	  <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src=" ../codebase/ext/dhtmlxscheduler_quick_info.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src=" ../codebase/ext/dhtmlxscheduler_active_links.js" type="text/javascript" charset="utf-8"></script>
 
  <!-- <link rel="stylesheet" href="../codebase/dhtmlxscheduler_flat.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
 
@@ -32,7 +34,7 @@
 
 session_start();
  
-
+include('../checklogin.php');
 include('../database_connection.php');
 
 $c_id=$_SESSION["login"];
@@ -220,13 +222,20 @@ var tag=0;
 			};
 
 
-		
+		function block_readonly(id){
+			if (!id) return true;
+			return !this.getEvent(id).readonly;
+		}
+		scheduler.attachEvent("onBeforeDrag",block_readonly)
+		scheduler.attachEvent("onClick",block_readonly)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		scheduler.config.xml_date="%Y-%m-%d %H:%i";
 		// scheduler.config.prevent_cache = true;
 		scheduler.config.repeat_date = "%m/%d/%Y";
 		// export to pdf 
-		 
+		 scheduler.config.touch = "force";
+
 		 
 		// scheduler.config.readonly_form = true;
 // scheduler.config.readonly = false;
@@ -243,14 +252,14 @@ var tag=0;
 			var Privacy = [
     { key: 1, label: 'Private' },
     { key: 2, label: 'Public (Visible to your friends)' },
-     
+    { key: 3, label: 'Time slot Booking (Allow your friends add events within this range)' },
 ];
  
 			scheduler.config.lightbox.sections=[	
 				{ name:"description", height:50, map_to:"text", type:"textarea", focus:true },
 				{ name:"location", height:43, map_to:"event_location", type:"textarea"  },
 				{name:"recurring", height:115, type:"recurring", map_to:"rec_type",button:"recurring"},
-				{ name:"Privacy", height:58, options:Privacy, map_to:"Privacy", type:"radio", vertical:true, default_value: "1"},
+				{ name:"Privacy", height:65, options:Privacy, map_to:"Privacy", type:"radio", vertical:true, default_value: "1"},
 				{ name:"time", height:72, type:"time", map_to:"auto"}	
 			]
 			scheduler.config.map_inital_zoom = 8;
@@ -258,6 +267,11 @@ var tag=0;
 		// scheduler.attachEvent("onBeforeDrag",block_readonly )
 		// scheduler.attachEvent("onClick",block_readonly )
     
+	scheduler.xy.menu_width = 0;
+		scheduler.config.details_on_dblclick = true;
+		scheduler.config.details_on_create = true;
+		scheduler.attachEvent("onClick",function(){ return false; });
+
 	scheduler.init('scheduler_here',new Date(),"month");
 		scheduler.load("../data/connector.php");
  
@@ -361,7 +375,7 @@ document.getElementById("myText").value = "";
 		<div class='dhx_cal_export pdf' id='export_pdf' title='Export to PDF' onclick='scheduler.toPDF("http://dhtmlxscheduler.appspot.com/export/pdf", "color")'>&nbsp;</div>
 		<div class="dhx_cal_tab" name="map_tab" style="right:280px;"></div>
 		<div class="dhx_cal_date"></div>
-<div class="dhx_cal_tab" name="custom_tab" style="right:270px;"  ></div>
+<!-- <div class="dhx_cal_tab" name="custom_tab" style="right:270px;"  ></div> -->
 
     <div class="dhx_minical_icon" id="dhx_minical_icon"  onclick="show_minical()"> </div>
 			<div class="dhx_cal_prev_button">&nbsp;</div>
