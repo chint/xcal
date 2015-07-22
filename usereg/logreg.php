@@ -137,7 +137,7 @@ $_SESSION['un']=$row['c_fname'];
   {
     $_SESSION['Admin']=$row['un'];
   }
-header("location: http://localhost/shop/web");
+header("location: ../home.html");
 }
 else 
 {

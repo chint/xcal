@@ -60,7 +60,7 @@ else
 {
 	 echo 'invalid UN/PW combination ' . mysqli_error($bd);
 	 // echo '  <a class="btn btn-default" href="http://localhost/shop/customer/tryagain.php" >Try Again</a> ';
-// header("location: http://localhost/shop/customer/tryagain.php");
+header("location:  logreg.php");
 }
 }
 ?>

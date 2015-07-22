@@ -1,11 +1,9 @@
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
-      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
-
-      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
 <script type="text/javascript" src="../bootstrap/js/easing.js"></script>
 <script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
-   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
         <script>
             $(function(){
   $("#header").load("../header/header.php"); 
@@ -28,8 +26,8 @@
 
 
   <body>
-<script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- <script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script> -->
+<!-- <link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <div class="well well-sm">
 
@@ -42,11 +40,11 @@
 <div class="well well-sm">
 <table class="table table-bordered">
   <tr> <td>
- <label><h4><a href="accountedit.php">Edit My Account Details</a> </h4></label>
+ <label><h4><a href="friends.php">Friends</a> </h4></label>
  </td> </tr>
-  <tr><td>
-    <label><h4> <a href="accountorder.php" >Under construction</a> </h4></label>
-  </td></tr>
+  <!-- <tr><td> -->
+    <!-- <label><h4> <a href="accountorder.php" >Under construction</a> </h4></label> -->
+  <!-- </td></tr> -->
 </table>
   </div>
   </div>

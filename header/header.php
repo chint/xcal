@@ -152,15 +152,21 @@ echo
 ';
 
 $result = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM `calendar`.`friends` WHERE `c_id_2` = '$_SESSION[login]' AND `status` = '0' ");
-if ($row = mysqli_fetch_array($result)) {
+$row = mysqli_fetch_array($result); 
 
-	if($row['count']!=0){
+$result1 = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM `calendar`.`messages` WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
+$row1 = mysqli_fetch_array($result1); 
+
+$count=$row['count']+$row1['count'];
+
+
+	if($count!=0){
 
 echo '
 <div class="navbar-form navbar-right">
 <div class="btn-group">
-  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   '.$row['count'].'<span class="caret"></span>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge">
+   '.$count.'</span><span class="caret"></span>
   </button>
   <ul class="dropdown-menu">';
 
@@ -173,9 +179,27 @@ echo '
   echo '<li><a>Friend request from: '.$row1['c_fname'].'</a></li>
   		<div class="row">
   		<div class="col text-center">
-        <a href="../friends/accept.php?id='.$row['id'].'" ";><button type="button" class="btn btn-danger">Reject</button></a>
-        <a href="../friends/accept.php?status=1&id='.$row['id'].'" ";><button type="button" class="btn btn-success">Accept</button></a>
+        <a href="../friends/accept.php?id='.$row['id'].'" "><button type="button" class="btn btn-danger">Reject</button></a>
+        <a href="../friends/accept.php?status=1&id='.$row['id'].'" "><button type="button" class="btn btn-success">Accept</button></a>
         </div>
+        </div>
+        <li class="divider"></li>
+  ';
+  }
+
+  $result = mysqli_query($bd, "SELECT * FROM `calendar`.`messages` WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
+  while ( $row = mysqli_fetch_array($result)) {
+
+  $result1 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE  `c_id`= '$row[from_cid]'  ");  // to get friends name
+  $row1 = mysqli_fetch_assoc($result1);
+
+  echo '<li><a>Message from: '.$row1['c_fname'].'</a></li>
+      <div class="row">
+      <div class="col text-center">'; ?>
+        <a><button onClick="popitup('../friends/deletemsg.php?f=1&x=<?php echo $row['deleted']; ?>&id=<?php echo $row['id']; ?>')" type="button" class="btn btn-danger">Delete</button></a>
+        <a><button onClick="popitup('../friends/viewmessage.php?id=<?php echo $row['id']; ?>')" type="button" class="btn btn-info">Read</button></a>
+  <?php      
+  echo '  </div>
         </div>
         <li class="divider"></li>
   ';
@@ -190,7 +214,7 @@ echo   '
 
 }
 
-}
+
 
 
 
@@ -226,5 +250,15 @@ echo   '
     </nav>   
 </body>
 </html>
+
+<script>
+  
+function popitup(url) {
+       newwindow=window.open(url,'windowName','height=450,width=650');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
+
+</script>
 
 	

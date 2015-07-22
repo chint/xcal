@@ -41,6 +41,9 @@
     <label><h4> <a href="../friends/friends.php" >My Friends</a> </h4></label>
   </td></tr>
   <tr> <td>
+ <label><h4><a href="../friends/message.php">Messages</a> </h4></label>
+ </td> </tr>
+   <tr> <td>
  <label><h4><a href="skin.php">Edit My Skin</a> </h4></label>
  </td> </tr>
 </table>

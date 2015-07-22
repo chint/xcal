@@ -5,16 +5,14 @@
 	</head>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
       <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
-<!-- 
+
       <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
 <script type="text/javascript" src="../bootstrap/js/easing.js"></script>
 <script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
- 
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    
-   -->
+    
+  
     <!-- // <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
 	<script src="../codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
 	  <!-- // <script src="../codebase/ext/dhtmlxscheduler_map_view.js" type="text/javascript" charset="utf-8"></script> -->
@@ -23,12 +21,52 @@
 <!-- <script src="../codebase/ext/dhtmlxscheduler_units.js" type="text/javascript" charset="utf-8"></script> -->
 	<!-- // <script src='../codebase/ext/dhtmlxscheduler_minical.js' type="text/javascript"></script> -->
 	<script src="../codebase/ext/dhtmlxscheduler_year_view.js" type="text/javascript" charset="utf-8"></script>
- 
+   <script src="../codebase/ext/dhtmlxscheduler_readonly.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../codebase/ext/dhtmlxscheduler_limit.js" type="text/javascript" charset="utf-8"></script>
 	
 	  <script src="../codebase/ext/dhtmlxscheduler_serialize.js" type="text/javascript" charset="utf-8"></script>
  	<script src="../codebase/ext/dhtmlxscheduler_collision.js" type="text/javascript" charset="utf-8"></script>
-	 
+<?php
+
+session_start();
+ 
+include('../checklogin.php');
+include('../database_connection.php');
+
+$c_id=$_SESSION["login"];
+$result = mysqli_query($bd, "SELECT skin FROM `calendar`.`cus` WHERE `c_id` = '$c_id'");
+if ($row = mysqli_fetch_array($result)) {
+$skin = $row['skin'];
+  
+if ($skin==1)
+{ ?>
+ <link rel="stylesheet" href="../codebase/dhtmlxscheduler_flat.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
+   <?php 
+ } else if($skin==2)
+{
+?>   
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler_glossy.css" type="text/css" media="screen">
+ <?php
+}
+else if($skin==3)
+{
+ ?> 
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler_classic.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<?php
+}
+else
+{
+?> 
+<link rel="stylesheet" href="../codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<?php
+}
+}
+else {
+ echo "no results found";
+}
+mysqli_close($bd);
+    ?> 
+ 
   <script>
             $(function(){
   $("#calbody").load("../header/header.php"); 
@@ -98,10 +136,11 @@
 	</style>
 
    <?php
-session_start();
+// session_start();
 include('../database_connection.php');
-$eid=211;
+$eid=195;
 // $c_id=$_SESSION["login"];
+include('../check4frnd.php');
 
 $result = mysqli_query($bd, "SELECT * FROM `calendar`.`events` WHERE `privacy` = '3' and event_id=$eid");
 if ($row = mysqli_fetch_array($result)) {
@@ -114,7 +153,7 @@ $end_date=$row['end_date'];
 $sd=date_parse_from_format("Y-m-d", $start_date);
 $ed=date_parse_from_format("Y-m-d", $end_date);
 // echo $sd ['year'];
-echo $row['event_id']."-".$row['event_name']."-".$row['start_date']."-".$row['end_date'];
+// echo $row['event_id']."-".$row['event_name']."-".$row['start_date']."-".$row['end_date'];
 }else{
 echo ("nothing");
 }
@@ -125,7 +164,65 @@ echo ("nothing");
 
 
 	function init() {
- 
+  scheduler.templates.event_class=function(start, end, event){
+var tag=0;
+
+				 var css = "";
+				if(   event.cid!="<?php echo $c_id;?>"  ) // if event has priority property then special class should be assigned
+					{
+						if(!event.cid)
+						{
+
+						}else{
+							scheduler.getEvent(event.id).readonly = true;
+	 				var i= scheduler.getEvent(event.id).c_id;
+						}
+						// event.text="";
+						// css += "event_"+event.Privacy;
+	  				
+	 				//var name=nameFunction(i);
+	 				// alert(event.cid);
+// $.when(nameFunction(i,event)).then(function(res,event){
+     
+//     // alert(cache[ i ]);
+//     // event.text+=res;
+//     // scheduler.getEvent(event.id).event_name=res;
+// // event.text+=res;
+// });
+ // event.text+=i;
+					// alert(tag);
+
+				var desc = scheduler.getEvent(event.id).text;
+			var t=	desc.split(" By:- ");
+
+					// var desc2=desc.split("--");
+					 if(t.length==1  )
+					 {
+					 	// alert(tag);
+					 	event.text  = scheduler.getEvent(event.id).text + " By:- " + event.c_fname;
+					 	
+					 }
+
+					 else
+
+					 {
+
+					 }
+
+
+					
+
+				}else{
+					scheduler.getEvent(event.id).c_id = "<?php echo $c_id ;?>";
+				}
+
+				// if(event.id == scheduler.getState().select_id){
+				// 	css += " selected";
+				// }
+				 
+				return css; // default return
+ 					
+			};
 // var sdate="<?php echo $start_date ; ?>";
 
 var sm=Number("<?php echo $sd ['month']; ?>")-1;
@@ -166,7 +263,12 @@ scheduler.init('scheduler_here',new Date(sy,sm,sd),"week");
 		var dp = new dataProcessor("../data/connector2.php?eid=<?php echo $eid; ?>");
 			dp.init(scheduler);
 			
-
+function block_readonly(id){
+			if (!id) return true;
+			return !this.getEvent(id).readonly;
+		}
+		scheduler.attachEvent("onBeforeDrag",block_readonly)
+		scheduler.attachEvent("onClick",block_readonly)
 		scheduler.attachEvent("onClick",function(){ return false; });
 
 		
@@ -177,7 +279,9 @@ scheduler.init('scheduler_here',new Date(sy,sm,sd),"week");
 		 	}
 
   
- 
+ function myFunction(){
+			alert("Search not available is time slot booking");
+		}
 </script>
 
   <div id="calbody"></div>

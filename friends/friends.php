@@ -11,11 +11,21 @@
   $("#header").load("../header/header.php"); 
   
   });
+
+  
+function popitup(url) {
+       newwindow=window.open(url,'windowName','height=450,width=650');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
+
+
+ 
  
         </script>
   <div id="header"></div> 
 
-    <div class="row">
+  <div class="row">
   <div class="col-md-1 "></div>
   <div class="col-md-10 ">
 
@@ -27,8 +37,8 @@
 
 
   <body>
-<script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- <script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
+<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <div class="well well-sm">
 
@@ -44,7 +54,7 @@
  <label><h4><a href="sendfriendrequest.php" >Add Friends</a> </h4></label>
  </td> </tr>
   <tr><td>
-    <label><h4> <a href="accountorder.php" >Under construction</a> </h4></label>
+    <label><h4> <a href="message.php" >Messages</a> </h4></label>
   </td></tr>
 </table>
   </div>
@@ -69,30 +79,42 @@ include('../database_connection.php');
 </div>
 
 <?php
- $result = mysqli_query($bd, "SELECT * FROM `calendar`.`friends` WHERE `c_id_2` = '$_SESSION[login]' OR `c_id_1`='$_SESSION[login]' AND `status` = '1' ");
+ $result = mysqli_query($bd, "SELECT * FROM `friends` WHERE `c_id_1` = '$_SESSION[login]' AND `status` = '1' OR `c_id_2`='$_SESSION[login]' AND `status` = '1' ");
   while ( $row = mysqli_fetch_array($result)) {
     if($row['c_id_1']==$_SESSION['login']){
 
-      $result1 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_id` = '$row[c_id_2]' ");
+      $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE `c_id` = '$row[c_id_2]' ");
       $row1 = mysqli_fetch_array($result1);
-
+    $cid1= $row1['c_id'];
+    $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` =$cid1 AND `Privacy` = 3 ");
+   
+            while ( $row = mysqli_fetch_array($sqlslot)) {
+              echo " slot available";
+            }
     ?>
 
 <div class="row">
   <div class="col-md-8"><?php echo $row1['c_fname'].'&nbsp'.$row1['c_lname'];   ?></div>
-  <div class="col-md-4"><a href="accept.php?id=<?php echo $row['id']; ?>"><button class="btn btn-primary">Unfriend</button></a></div>
+   <div class="col-md-2"><a onClick="popitup('sendmessage.php?cid=<?php echo $row1['c_id']; ?>&name=<?php echo $row1['c_fname']; ?>')" ><button class="btn btn-info">Send Message</button></a></div>
+  <div class="col-md-2"><a href="accept.php?id=<?php echo $row['id']; ?>"><button class="btn btn-warning">Unfriend</button></a></div>
 </div>
 <br>
 <?php
 }else{
 
-      $result2 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_id` = '$row[c_id_1]' ");
+      $result2 = mysqli_query($bd, "SELECT * FROM cus WHERE `c_id` = '$row[c_id_1]' ");
       $row2 = mysqli_fetch_array($result2);
-
+       $cid2= $row2['c_id'];
+$sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` = $cid2 AND `Privacy` = 3 ");
+   
+            while ( $row = mysqli_fetch_array($sqlslot)) {
+              echo " slot available";
+            }
 ?>
 <div class="row">
   <div class="col-md-8"><?php echo $row2['c_fname'].'&nbsp'.$row2['c_lname'];   ?></div>
-  <div class="col-md-4"><a href="accept.php?id=<?php echo $row['id']; ?>"><button class="btn btn-primary">Unfriend</button></a></div>
+   <div class="col-md-2"><a  onClick="popitup('sendmessage.php?cid=<?php echo $row2['c_id']; ?>&name=<?php echo $row2['c_fname']; ?>')" ><button class="btn btn-info">Send Message</button></a></div>
+  <div class="col-md-2"><a href="accept.php?id=<?php echo $row['id']; ?>"><button class="btn btn-warning">Unfriend</button></a></div>
 </div>
 <br>
 

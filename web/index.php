@@ -171,6 +171,8 @@ mysqli_close($bd);
 var tag=0;
 
 				 var css = "";
+				 if(event.priority) 
+					css += "event_"+event.priority;
 				if(event.Privacy==2 && event.c_id!="<?php echo $c_id;?>") // if event has priority property then special class should be assigned
 					{
 						// event.text="";
@@ -222,6 +224,16 @@ var tag=0;
 			};
 
 
+ scheduler.templates.event_classs=function(start, end, event){
+				var css = "";
+				if(event.priority) 
+					css += "event_"+event.priority;
+				if(event.id == scheduler.getState().select_id){
+					css += " selected";
+				}
+				return css; // default return
+			};
+
 		function block_readonly(id){
 			if (!id) return true;
 			return !this.getEvent(id).readonly;
@@ -255,11 +267,18 @@ var tag=0;
     { key: 3, label: 'Time slot Booking (Allow your friends add events within this range)' },
 ];
  
+			var priority = [
+	{ key: 1, label: '&nbsp;Normal&nbsp;&nbsp;&nbsp;' },
+    { key: 2, label: '&nbsp;High &nbsp;&nbsp;&nbsp;' },
+	{ key: 3, label: '&nbsp;Low &nbsp;&nbsp;&nbsp;' },
+    
+];
 			scheduler.config.lightbox.sections=[	
 				{ name:"description", height:50, map_to:"text", type:"textarea", focus:true },
 				{ name:"location", height:43, map_to:"event_location", type:"textarea"  },
 				{name:"recurring", height:115, type:"recurring", map_to:"rec_type",button:"recurring"},
 				{ name:"Privacy", height:65, options:Privacy, map_to:"Privacy", type:"radio", vertical:true, default_value: "1"},
+					{ name:"priority", height:25, options:priority, map_to:"priority", type:"radio", vertical:false},
 				{ name:"time", height:72, type:"time", map_to:"auto"}	
 			]
 			scheduler.config.map_inital_zoom = 8;
@@ -267,10 +286,10 @@ var tag=0;
 		// scheduler.attachEvent("onBeforeDrag",block_readonly )
 		// scheduler.attachEvent("onClick",block_readonly )
     
-	scheduler.xy.menu_width = 0;
-		scheduler.config.details_on_dblclick = true;
-		scheduler.config.details_on_create = true;
-		scheduler.attachEvent("onClick",function(){ return false; });
+	// scheduler.xy.menu_width = 0;
+	// 	scheduler.config.details_on_dblclick = true;
+	// 	scheduler.config.details_on_create = true;
+	// 	scheduler.attachEvent("onClick",function(){ return false; });
 
 	scheduler.init('scheduler_here',new Date(),"month");
 		scheduler.load("../data/connector.php");
