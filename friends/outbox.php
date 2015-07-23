@@ -79,15 +79,15 @@ include('../database_connection.php');
 <tr>&nbsp</tr>
 <?php 
 
- $result = mysqli_query($bd, "SELECT * FROM `calendar`.`messages` WHERE `from_cid` = '$_SESSION[login]'  AND  `deleted` <> '2' ");
+ $result = mysqli_query($bd, "SELECT * FROM `messages` WHERE `from_cid` = '$_SESSION[login]'  AND  `deleted` <> '2' ");
  if($row = mysqli_fetch_array($result)){
 
-$result = mysqli_query($bd, "SELECT * FROM `calendar`.`messages` WHERE `from_cid` = '$_SESSION[login]' AND  `deleted` <> '2' ORDER BY `id` DESC");
+$result = mysqli_query($bd, "SELECT * FROM `messages` WHERE `from_cid` = '$_SESSION[login]' AND  `deleted` <> '2' ORDER BY `id` DESC");
 
   while ( $row = mysqli_fetch_array($result)) {
    
 
-      $result1 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_id` = '$row[to_cid]' ");
+      $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE `c_id` = '$row[to_cid]' ");
       $row1 = mysqli_fetch_array($result1);
     ?>
 

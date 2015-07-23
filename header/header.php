@@ -171,10 +171,10 @@ echo '
   </button>
   <ul class="dropdown-menu">';
 
-  $result = mysqli_query($bd, "SELECT * FROM `calendar`.`friends` WHERE `c_id_2` = '$_SESSION[login]' AND `status` = '0' ");
+  $result = mysqli_query($bd, "SELECT * FROM `friends` WHERE `c_id_2` = '$_SESSION[login]' AND `status` = '0' ");
   while ( $row = mysqli_fetch_array($result)) {
 
-  $result1 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE  `c_id`= '$row[c_id_1]'  ");  // to get friends name
+  $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE  `c_id`= '$row[c_id_1]'  ");  // to get friends name
   $row1 = mysqli_fetch_assoc($result1);
 
   echo '<li><a>Friend request from: '.$row1['c_fname'].'</a></li>
@@ -188,10 +188,10 @@ echo '
   ';
   }
 
-  $result = mysqli_query($bd, "SELECT * FROM `calendar`.`messages` WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
+  $result = mysqli_query($bd, "SELECT * FROM `messages` WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
   while ( $row = mysqli_fetch_array($result)) {
 
-  $result1 = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE  `c_id`= '$row[from_cid]'  ");  // to get friends name
+  $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE  `c_id`= '$row[from_cid]'  ");  // to get friends name
   $row1 = mysqli_fetch_assoc($result1);
 
   echo '<li><a>Message from: '.$row1['c_fname'].'</a></li>

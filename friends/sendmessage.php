@@ -11,18 +11,19 @@ session_start();
 
 if (isset($_POST['submit'])) {
 
-$sql = "INSERT INTO `calendar`.`messages` (`id`, `from_cid`, `to_cid`, `head`, `body`, `status`)
+$sql = "INSERT INTO `messages` (`id`, `from_cid`, `to_cid`, `head`, `body`, `status`)
  VALUES (NULL,'$_SESSION[login]','$_POST[to_cid]','$_POST[head]','$_POST[body]','0') ";
 
 if (!mysqli_query($bd, $sql))
   {
   die('Error: ' . mysqli_error($bd));
   }else {
-  	
-  
-	echo $_POST['to_cid'];
-	echo $_POST['head'];
-	echo $_POST['body'];
+  	?>
+  <script type="text/javascript">
+    window.close();
+  </script>
+ 
+  <?php
 }
 	
 }else{

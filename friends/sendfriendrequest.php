@@ -63,10 +63,10 @@ include('../database_connection.php');
 if(isset($_POST['submit'])){
 
 
-$result = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_email` = '$_POST[femail]' ");
+$result = mysqli_query($bd, "SELECT * FROM `cus` WHERE `c_email` = '$_POST[femail]' ");
 if ($row = mysqli_fetch_array($result)) {
 
-$result1 = mysqli_query($bd, "SELECT `status` FROM `calendar`.`friends` WHERE `c_id_1` = '$_SESSION[login]' AND `c_id_2` = '$row[c_id]' OR `c_id_2` = '$_SESSION[login]' AND `c_id_1` = '$row[c_id]'");
+$result1 = mysqli_query($bd, "SELECT `status` FROM `friends` WHERE `c_id_1` = '$_SESSION[login]' AND `c_id_2` = '$row[c_id]' OR `c_id_2` = '$_SESSION[login]' AND `c_id_1` = '$row[c_id]'");
 if ($row1 = mysqli_fetch_array($result1)) {
 
   if($row1['status']==0){
@@ -81,8 +81,8 @@ echo '<div class="alert alert-info" role="alert">Already Your Friend !!!</div>';
 
 $from = '<from@gmail.com>';
 $to = '<'.$_POST['femail'].'>';
-$subject = 'Your username and password';
-$body="Your have frned request";
+$subject = 'Your have friend request';
+$body="Your have friend request from ".$_SESSION['name'].". To accept plese login www.xcal.net64.net";
 
 
 $headers = array(
@@ -102,7 +102,7 @@ $smtp = Mail::factory('smtp', array(
 
 $mail = $smtp->send($to, $headers, $body);
 
-$sql = "INSERT INTO `calendar`.`friends` (`c_id_1`, `c_id_2`) VALUES ('$_SESSION[login]','$row[c_id]')";
+$sql = "INSERT INTO `friends` (`c_id_1`, `c_id_2`) VALUES ('$_SESSION[login]','$row[c_id]')";
 
  if (!mysqli_query($bd, $sql)){die('Error: ' . mysqli_error($bd)); }
 
