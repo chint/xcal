@@ -194,9 +194,9 @@ return false;
   <tr> <td>
  <label><h4> Edit Account Details <span class="glyphicon glyphicon-play"></span> </h4></label>
  </td> </tr>
-  <tr><td>
+  <!-- <tr><td>
     <label><a href="accountorder.php"><h4>under construction</h4></a></label>
-  </td></tr>
+  </td></tr> -->
 </table>
   </div>
   </div>

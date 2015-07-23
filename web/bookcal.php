@@ -138,11 +138,11 @@ mysqli_close($bd);
    <?php
 // session_start();
 include('../database_connection.php');
-$eid=195;
-// $c_id=$_SESSION["login"];
-include('../check4frnd.php');
+// $eid=195;
+$eid=$_GET["eid"];
+// include('../check4frnd.php');
 
-$result = mysqli_query($bd, "SELECT * FROM `calendar`.`events` WHERE `privacy` = '3' and event_id=$eid");
+$result = mysqli_query($bd, "SELECT * FROM  events WHERE `privacy` = '3' and event_id=$eid");
 if ($row = mysqli_fetch_array($result)) {
  
 $event_id=$row['event_id'];
@@ -257,7 +257,9 @@ scheduler.init('scheduler_here',new Date(sy,sm,sd),"week");
 		scheduler.xy.menu_width = 0;
 		scheduler.config.details_on_dblclick = true;
 		scheduler.config.details_on_create = true;
-
+	scheduler.config.lightbox.sections=[	
+				{ name:"description", height:50, map_to:"text", type:"textarea", focus:true }
+			]
 		scheduler.load("../data/connector2.php?eid=<?php echo $eid; ?>");
  
 		var dp = new dataProcessor("../data/connector2.php?eid=<?php echo $eid; ?>");

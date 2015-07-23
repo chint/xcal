@@ -85,12 +85,13 @@ include('../database_connection.php');
 
       $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE `c_id` = '$row[c_id_2]' ");
       $row1 = mysqli_fetch_array($result1);
-    $cid1= $row1['c_id'];
-    $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` =$cid1 AND `Privacy` = 3 ");
+    // $cid1= $row1['c_id'];
+    // $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` =$cid1 AND `Privacy` = 3 ");
    
-            while ( $row = mysqli_fetch_array($sqlslot)) {
-              echo " slot available";
-            }
+            // while ( $row = mysqli_fetch_array($sqlslot)) {
+            //   // echo " slot available";
+               
+            // }
     ?>
 
 <div class="row">
@@ -104,12 +105,13 @@ include('../database_connection.php');
 
       $result2 = mysqli_query($bd, "SELECT * FROM cus WHERE `c_id` = '$row[c_id_1]' ");
       $row2 = mysqli_fetch_array($result2);
-       $cid2= $row2['c_id'];
-$sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` = $cid2 AND `Privacy` = 3 ");
+       // $cid2= $row2['c_id'];
+// $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` = $cid2 AND `Privacy` = 3 ");
    
-            while ( $row = mysqli_fetch_array($sqlslot)) {
-              echo " slot available";
-            }
+            // while ( $row = mysqli_fetch_array($sqlslot)) {
+            //   // echo " slot available";
+
+            // }
 ?>
 <div class="row">
   <div class="col-md-8"><?php echo $row2['c_fname'].'&nbsp'.$row2['c_lname'];   ?></div>

@@ -109,7 +109,7 @@
 
         <div class="navbar-header">
         <a class="navbar-brand" href="./index.php">
-        <img alt="Brand" width="20" height="20" src=" ./header/icon.ico">
+        <img alt="Brand" width="20" height="20" src=" icon.ico">
         </a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -143,8 +143,9 @@ echo
           <form class="navbar-form navbar-right" action="../usereg/logout.php" method="post">
  			Welcome:'.$_SESSION['name'].'
  			 <a href="../usereg/account.php" class="btn btn-success" role="button">My Account</a>
-            
-            <button type="submit" class="btn btn-success">Logout</button>
+             <a href="../usereg/bookings.php" class="btn btn-success" role="button">Appointments</a>
+            <button type="submit" class="btn btn-info">Logout</button>
+
          </form> 
         
  
