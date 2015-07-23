@@ -51,11 +51,19 @@ $conn->sql->attach("Delete","DELETE FROM events WHERE event_id={event_id}");
 $conn->sql->attach("Insert","INSERT INTO `calendar`.`events` (`event_id`, `event_name`, `start_date`, `end_date`, `event_length`, `event_pid`, `rec_type`, `details`, `event_location`, `lat`, `lng`, `c_id`, `readonly`, `priority`, `Privacy`) 
 															VALUES (NULL, '{event_name}', '{start_date}', '{end_date}', '{event_length}', '{event_pid}', '{rec_type}', '{details}', '{event_location}', '{lat}', '{lng}', '{c_id}', '{readonly}', '{priority}', '{Privacy}')");
 
-$conn->render_sql("SELECT events.*,cus.c_id,cus.c_fname FROM events INNER JOIN cus ON events.c_id=cus.c_id INNER JOIN friends on friends.c_id_1= events.c_id OR friends.c_id_2=events.c_id WHERE events.Privacy=2 or events.c_id=".$c_id,"event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,event_location,lat,lng,readonly,priority,Privacy,c_id,c_fname", "", "");
+
+$conn->render_sql("SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=".$c_id." AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= ".$c_id." AND friends.c_id_2=events.c_id OR friends.c_id_2=".$c_id." AND friends.c_id_1=events.c_id WHERE events.Privacy=2","event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,event_location,lat,lng,readonly,priority,Privacy,c_id,c_fname", "", "");
+
+// $conn->render_sql("SELECT events.*,cus.c_id,cus.c_fname FROM events INNER JOIN cus ON events.c_id=cus.c_id INNER JOIN friends on friends.c_id_1= events.c_id OR friends.c_id_2=events.c_id WHERE events.Privacy=2 or events.c_id=".$c_id,"event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,event_location,lat,lng,readonly,priority,Privacy,c_id,c_fname", "", "");
 // $conn->render_table("events","event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,details,event_location,lat,lng,subject");
 // $sql = "SELECT * FROM events WHERE ( events.c_id = 2) or events.c_id=(SELECT c_id_2 FROM friends where c_id_1=2)";
  
 //SELECT * FROM events WHERE `events`.`c_id` = ".$c_id." or events.c_id=(SELECT c_id_2 FROM friends where c_id_1=".$c_id."   ) 
+
+
+
+
+
 }
 
 
