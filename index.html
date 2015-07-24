@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="icon.ico">
+
+    <title>Online Calendar</title>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
+
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="bootstrap/js/move-top.js"></script>
+<script type="text/javascript" src="bootstrap/js/easing.js"></script>
+<script type="text/javascript" src="bootstrap/js/startstop-slider.js"></script>
+   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+ 
+  <style type="text/css" media="screen">
+  body { 
+background: url(bg.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.jumbotron{
+background-color: rgba(245, 245, 245, 0.4);
+ /*background-color: rgba(0,0,0,0.0);*/
+  /*background: none;*/
+  /*background: rgba(122, 130, 136, 0.2)!important;*/
+   /*background:rgba(0,0,0,0.5);   /* for latest browsers */*/
+   /*background: #000; */
+   /*background-color: rgba(255, 255, 255, 0.9);*/
+}
+
+/*.jumbotron .container{
+background-color: rgba(245, 245, 245, 0.4);
+ background-color: rgba(0,0,0,0.0);
+  background: none;
+}*/
+
+  </style> 
+
+
+   
+ 
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse  ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Online Calendar</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" action="usereg/login.php" method="post">
+            <div class="form-group">
+              <input type="text" placeholder="Email or User Name" name="userormail" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" name="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+            <a href="usereg/adduser.php" class="btn btn-info" role="button">Register</a>
+          </form>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>XCal Online Calendar</h1>
+        <p>XCal Online Calender is time-management web site which allows to create and manage your daily events.It also provide the option to share your events with other XCal users and Time Slot Booking</p>
+        <p><a class="btn btn-primary btn-lg" href="usereg/adduser.php" role="button">Join Now &raquo;</a></p>
+      </div>
+    </div>
+
+    <!-- <div class="container"> -->
+     
+      <!-- <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div> -->
+<!-- 
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer> -->
+    <!-- </div>  -->
+ 
+    
+  </body>
+</html>

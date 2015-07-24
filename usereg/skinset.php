@@ -20,7 +20,7 @@ $c_id=$_SESSION["login"];
 
 $skin=$_POST['optradio']; 
 
-$sql = "UPDATE   `calendar`.`cus` SET  `skin` = '$skin'
+$sql = "UPDATE   cus SET  `skin` = '$skin'
  WHERE  `cus`.`c_id` =$c_id;";
 
 

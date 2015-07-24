@@ -54,7 +54,7 @@ $conn->sql->attach("Insert","INSERT INTO `calendar`.`bookevent` (`event_id`, `ev
 										VALUES (NULL, '{event_name}', '{start_date}', '{end_date}' , ".$c_id." ,".$eid.")");
 
 // $conn->sql->attach("Select","SELECT * FROM bookevent WHERE eid=".$eid);
-$conn->render_sql("SELECT * FROM bookevent WHERE eid=".$eid,"event_id","start_date,end_date,event_name,readonly,cid,eid", "", "");
+$conn->render_sql("SELECT * FROM bookevent,cus WHERE bookevent.cid=cus.c_id and eid=".$eid,"event_id","start_date,end_date,event_name,readonly,cid,eid,c_fname", "", "");
 // $conn->render_sql("SELECT bookevent.*,cus.c_id,cus.c_fname FROM bookevent INNER JOIN cus ON bookevent.c_id=cus.c_id INNER JOIN friends on friends.c_id_1= bookevent.c_id OR friends.c_id_2=bookevent.c_id WHERE bookevent.Privacy=2 or bookevent.c_id=".$c_id,"event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,event_location,lat,lng,readonly,priority,Privacy,c_id,c_fname", "", "");
 // $conn->render_table("bookevent","event_id","start_date,end_date,event_name,rec_type,event_pid,event_length,details,event_location,lat,lng,subject");
 // $sql = "SELECT * FROM bookevent WHERE ( bookevent.c_id = 2) or bookevent.c_id=(SELECT c_id_2 FROM friends where c_id_1=2)";

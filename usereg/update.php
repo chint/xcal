@@ -17,7 +17,7 @@ include('../database_connection.php');
 
 if($_POST['pw']==''){
 
-$sql = "UPDATE   `calendar`.`cus` SET  `c_fname` =  '$_POST[c_fname]',
+$sql = "UPDATE   cus SET  `c_fname` =  '$_POST[c_fname]',
 `c_lname` =  '$_POST[c_lname]',
 `c_email` =  '$_POST[c_email]',
 `c_dob` =  '$_POST[c_dob]',
@@ -38,7 +38,7 @@ mysqli_close($bd);
 
 $pw=md5($_POST['pw']);
 echo $_GET['c_id'];
-$sql = "UPDATE   `calendar`.`cus` SET  `c_fname` =  '$_POST[c_fname]',
+$sql = "UPDATE    cus  SET  `c_fname` =  '$_POST[c_fname]',
 `c_lname` =  '$_POST[c_lname]',
 `c_email` =  '$_POST[c_email]',
 `c_dob` =  '$_POST[c_dob]',

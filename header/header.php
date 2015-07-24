@@ -152,10 +152,10 @@ echo
       
 ';
 
-$result = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM `calendar`.`friends` WHERE `c_id_2` = '$_SESSION[login]' AND `status` = '0' ");
+$result = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM  friends  WHERE `c_id_2` = '$_SESSION[login]' AND `status` = '0' ");
 $row = mysqli_fetch_array($result); 
 
-$result1 = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM `calendar`.`messages` WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
+$result1 = mysqli_query($bd, "SELECT COUNT(id) AS `count`  FROM  messages  WHERE `to_cid` = '$_SESSION[login]' AND `status` = '0' ");
 $row1 = mysqli_fetch_array($result1); 
 
 $count=$row['count']+$row1['count'];

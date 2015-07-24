@@ -1,17 +1,11 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="../web/web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="../web/web/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
-<script type="text/javascript" src="../web/web/js/jquery-1.7.2.min.js"></script> 
-<script type="text/javascript" src="../web/web/js/move-top.js"></script>
-<script type="text/javascript" src="http://localhost/bootstrap/js/jquery-1.7.2.min.js"></script> 
-<script type="text/javascript" src="http://localhost/bootstrap/js/move-top.js"></script>
-<script type="text/javascript" src="http://localhost/bootstrap/js/easing.js"></script>
-<script type="text/javascript" src="http://localhost/bootstrap/js/startstop-slider.js"></script>
-<!--    <script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>   -->
+ <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
 
-<script type="text/javascript" src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
-  <link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
+<script type="text/javascript" src="../bootstrap/js/easing.js"></script>
+<script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
       <script>
             $(function(){
   $("#header").load("../headerfooter/header.php"); 
@@ -31,19 +25,19 @@ session_start();
 // Pear Mail Library
 require_once "Mail.php";
 
-include('database_connection.php');
+include('../database_connection.php');
 $a=0;
 
 
 // echo $_POST['email1'];
 
-$result = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_email` = '$_POST[email1]' ");
+$result = mysqli_query($bd, "SELECT * FROM  cus WHERE `c_email` = '$_POST[email1]' ");
 
 if ($row = mysqli_fetch_array($result)) {
       
       $rand=rand();
 $_SESSION['rand']=$rand;
-    $body="Username - ".$row['un']. "  Password Reset Link : -  http://localhost/shop/logorreg/resetpw.php?r=".$rand."&cid=".$row['c_id'];
+    $body="Username - ".$row['un']. "  Password Reset Link : -  hhttp://xcal.net46.net/usereg/resetpw.php?r=".$rand."&cid=".$row['c_id'];
     $a=1;
 
 } else {

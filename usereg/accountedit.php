@@ -1,11 +1,11 @@
-<script type="text/javascript" src="http://localhost/bootstrap/js/jquery-1.11.2.min.js"></script> 
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
 
-<link rel="stylesheet" href="stylee1.css">
-<!-- <script src="../bootstrap/jquery/jquery-1.11.2.js"></script>  -->
-<script type="text/javascript" src="http://localhost/bootstrap/js/move-top.js"></script>
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
 <script type="text/javascript" src="../bootstrap/js/easing.js"></script>
 <script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 
   <!-- // <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script> -->
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
@@ -34,7 +34,7 @@ header('Location:../usereg/logreg.php');
 $a=$_SESSION['login'];
  }
  
-$result = mysqli_query($bd, "SELECT * FROM  `calendar`.`cus` WHERE `c_id` = '$a' ");
+$result = mysqli_query($bd, "SELECT * FROM   cus  WHERE `c_id` = '$a' ");
 
 if ($row = mysqli_fetch_array($result)) {
  

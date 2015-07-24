@@ -20,6 +20,13 @@ function popitup(url) {
      }
  
         </script>
+        <?php      //send email to friend
+
+session_start();
+include('../checklogin.php');
+include('../database_connection.php'); 
+
+?>
   <div id="header"></div> 
 
   <div class="row">
@@ -52,6 +59,53 @@ function popitup(url) {
  <label><h4><a href="friends.php" >Friends</a> </h4></label>
  </td> </tr>
 </table>
+<?php
+ $result = mysqli_query($bd, "SELECT * FROM `friends` WHERE `c_id_1` = '$_SESSION[login]' AND `status` = '1' OR `c_id_2`='$_SESSION[login]' AND `status` = '1' ");
+  while ( $row = mysqli_fetch_array($result)) {
+    if($row['c_id_1']==$_SESSION['login']){
+
+      $result1 = mysqli_query($bd, "SELECT * FROM `cus` WHERE `c_id` = '$row[c_id_2]' ");
+      $row1 = mysqli_fetch_array($result1);
+    // $cid1= $row1['c_id'];
+    // $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` =$cid1 AND `Privacy` = 3 ");
+   
+            // while ( $row = mysqli_fetch_array($sqlslot)) {
+            //   // echo " slot available";
+               
+            // }
+    ?>
+
+<div class="row">
+  <div class="col-md-2"><?php echo $row1['c_fname'].'&nbsp'.$row1['c_lname'];   ?></div><br>
+   <div class="col-md-1"><a onClick="popitup('sendmessage.php?cid=<?php echo $row1['c_id']; ?>&name=<?php echo $row1['c_fname']; ?>')" ><button class="btn btn-info btn-sm">Send Message</button></a></div>
+   
+</div>
+<br>
+<?php
+}else{
+
+      $result2 = mysqli_query($bd, "SELECT * FROM cus WHERE `c_id` = '$row[c_id_1]' ");
+      $row2 = mysqli_fetch_array($result2);
+       // $cid2= $row2['c_id'];
+// $sqlslot = mysqli_query($bd, "SELECT * FROM events WHERE `c_id` = $cid2 AND `Privacy` = 3 ");
+   
+            // while ( $row = mysqli_fetch_array($sqlslot)) {
+            //   // echo " slot available";
+
+            // }
+?>
+<div class="row">
+  <div class="col-md-2"><?php echo $row2['c_fname'].'&nbsp'.$row2['c_lname'];   ?></div><br>
+   <div class="col-md-1"><a  onClick="popitup('sendmessage.php?cid=<?php echo $row2['c_id']; ?>&name=<?php echo $row2['c_fname']; ?>')" ><button class="btn btn-info btn-sm">Send Message</button></a></div>
+   
+</div>
+<br>
+
+<?php
+}
+}
+?>
+
   </div>
   </div>
 
@@ -61,9 +115,9 @@ function popitup(url) {
 
 <?php      //send email to friend
 
-session_start();
-include('../checklogin.php');
-include('../database_connection.php'); 
+// session_start();
+// include('../checklogin.php');
+// include('../database_connection.php'); 
 
 ?>
 

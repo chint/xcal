@@ -768,3 +768,1007 @@ SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`
 
 Done in 0.058595895767212s
 
+
+
+====================================
+Log started, 23/07/2015 09:00:38
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.024442911148071s
+
+
+
+====================================
+Log started, 23/07/2015 09:00:43
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.026750087738037s
+
+
+
+====================================
+Log started, 23/07/2015 09:03:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.022678852081299s
+
+
+
+====================================
+Log started, 23/07/2015 09:03:23
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.033476114273071s
+
+
+
+====================================
+Log started, 23/07/2015 09:03:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.032821178436279s
+
+
+
+====================================
+Log started, 23/07/2015 09:04:21
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.031715154647827s
+
+
+
+====================================
+Log started, 23/07/2015 09:04:32
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.033890008926392s
+
+
+
+====================================
+Log started, 23/07/2015 09:04:44
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.032071113586426s
+
+
+
+====================================
+Log started, 23/07/2015 09:05:33
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.03564190864563s
+
+
+
+====================================
+Log started, 23/07/2015 09:05:47
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.037489175796509s
+
+
+
+====================================
+Log started, 23/07/2015 09:06:45
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.034937143325806s
+
+
+
+====================================
+Log started, 23/07/2015 09:07:34
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.034096002578735s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:03
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.025596141815186s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:10
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.031708955764771s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:16
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 28
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.062726974487305s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 28
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.037235021591187s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:27
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.031019926071167s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:40
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 28
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.034878969192505s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:50
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 28
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=7 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 7 AND friends.c_id_2=events.c_id OR friends.c_id_2=7 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.073662042617798s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.031961917877197s
+
+
+
+====================================
+Log started, 23/07/2015 09:08:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.025788068771362s
+
+
+
+====================================
+Log started, 23/07/2015 09:09:01
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+DataProcessor object initialized
+1437678539171_start_date => 2015-07-16 01:55
+1437678539171_end_date => 2015-07-16 02:00
+1437678539171_text => New event By:- undefined
+1437678539171_id => 1437678539171
+1437678539171_!nativeeditor_status => inserted
+ids => 1437678539171
+
+Row data [1437678539171]
+start_date => 2015-07-16 01:55
+end_date => 2015-07-16 02:00
+event_name => New event By:- undefined
+event_id => 1437678539171
+!nativeeditor_status => inserted
+
+adding field: cid, with value: 7
+
+adding field: eid, with value: 203
+
+INSERT INTO `calendar`.`bookevent` (`event_id`, `event_name`, `start_date`, `end_date` ,`cid`,`eid`  ) 
+										VALUES (NULL, 'New event By:- undefined', '2015-07-16 01:55', '2015-07-16 02:00' , 7 ,203)
+
+Edit operation finished
+0 => action:inserted; sid:1437678539171; tid:1437678539171;
+
+Done in 0.11814117431641s
+
+
+
+====================================
+Log started, 23/07/2015 09:09:06
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 28
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.053891181945801s
+
+
+
+====================================
+Log started, 23/07/2015 09:10:52
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.034668922424316s
+
+
+
+====================================
+Log started, 23/07/2015 09:10:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.034825086593628s
+
+
+
+====================================
+Log started, 23/07/2015 09:11:11
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.03217601776123s
+
+
+
+====================================
+Log started, 24/07/2015 08:30:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.30273199081421s
+
+
+
+====================================
+Log started, 24/07/2015 08:34:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.022114038467407s
+
+
+
+====================================
+Log started, 24/07/2015 08:34:54
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.046625137329102s
+
+
+
+====================================
+Log started, 24/07/2015 08:39:54
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.018301963806152s
+
+
+
+====================================
+Log started, 24/07/2015 08:45:24
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.3702220916748s
+
+
+
+====================================
+Log started, 24/07/2015 09:03:20
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.053808927536011s
+
+
+
+====================================
+Log started, 24/07/2015 09:06:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.026587009429932s
+
+
+
+====================================
+Log started, 24/07/2015 09:06:27
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.020969152450562s
+
+
+
+====================================
+Log started, 24/07/2015 09:14:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=205)
+
+Done in 0.045145988464355s
+
+
+
+====================================
+Log started, 24/07/2015 09:15:30
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.11423802375793s
+
+
+
+====================================
+Log started, 24/07/2015 09:26:15
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.10120701789856s
+
+
+
+====================================
+Log started, 24/07/2015 09:26:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.11127901077271s
+
+
+
+====================================
+Log started, 24/07/2015 09:26:59
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.03876781463623s
+
+
+
+====================================
+Log started, 24/07/2015 09:28:15
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.16678500175476s
+
+
+
+====================================
+Log started, 24/07/2015 09:29:06
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.03324294090271s
+
+
+
+====================================
+Log started, 24/07/2015 10:12:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.080527067184448s
+
+
+
+====================================
+Log started, 24/07/2015 10:18:27
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.04523491859436s
+
+
+
+====================================
+Log started, 24/07/2015 12:47:09
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.13844799995422s
+
+
+
+====================================
+Log started, 24/07/2015 12:47:19
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.070173978805542s
+
+
+
+====================================
+Log started, 24/07/2015 12:47:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=203)
+
+Done in 0.03511381149292s
+
+
+
+====================================
+Log started, 24/07/2015 12:47:26
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent WHERE ( eid=195)
+
+Done in 0.027453899383545s
+
+
+
+====================================
+Log started, 24/07/2015 12:49:03
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.034479141235352s
+
+
+
+====================================
+Log started, 24/07/2015 12:49:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.03672194480896s
+
+
+
+====================================
+Log started, 24/07/2015 12:50:03
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.05596399307251s
+
+
+
+====================================
+Log started, 24/07/2015 12:50:07
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+DataProcessor object initialized
+1437735006783_start_date => 2015-07-03 04:15
+1437735006783_end_date => 2015-07-03 04:20
+1437735006783_text => New event By:- undefined
+1437735006783_id => 1437735006783
+1437735006783_!nativeeditor_status => inserted
+ids => 1437735006783
+
+Row data [1437735006783]
+start_date => 2015-07-03 04:15
+end_date => 2015-07-03 04:20
+event_name => New event By:- undefined
+event_id => 1437735006783
+!nativeeditor_status => inserted
+
+adding field: cid, with value: 4
+
+adding field: eid, with value: 195
+
+INSERT INTO `calendar`.`bookevent` (`event_id`, `event_name`, `start_date`, `end_date` ,`cid`,`eid`  ) 
+										VALUES (NULL, 'New event By:- undefined', '2015-07-03 04:15', '2015-07-03 04:20' , 4 ,195)
+
+Edit operation finished
+0 => action:inserted; sid:1437735006783; tid:1437735006783;
+
+Done in 0.16236281394958s
+
+
+
+====================================
+Log started, 24/07/2015 12:50:09
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.03646183013916s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:00
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.036683082580566s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:01
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.034915924072266s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:02
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.034219026565552s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:02
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.022302865982056s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:22
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.027454137802124s
+
+
+
+====================================
+Log started, 24/07/2015 12:51:54
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.028532028198242s
+
+
+
+====================================
+Log started, 24/07/2015 12:52:40
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.052422046661377s
+
+
+
+====================================
+Log started, 24/07/2015 12:53:30
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=195)
+
+Done in 0.038248062133789s
+
+
+
+====================================
+Log started, 24/07/2015 12:53:54
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.038310050964355s
+
+
+
+====================================
+Log started, 24/07/2015 12:54:35
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=205)
+
+Done in 0.035700082778931s
+
+
+
+====================================
+Log started, 24/07/2015 12:54:38
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+DataProcessor object initialized
+1437735276650_start_date => 2015-07-07 02:25
+1437735276650_end_date => 2015-07-07 02:30
+1437735276650_text => New event By:- undefined
+1437735276650_id => 1437735276650
+1437735276650_!nativeeditor_status => inserted
+ids => 1437735276650
+
+Row data [1437735276650]
+start_date => 2015-07-07 02:25
+end_date => 2015-07-07 02:30
+event_name => New event By:- undefined
+event_id => 1437735276650
+!nativeeditor_status => inserted
+
+adding field: cid, with value: 3
+
+adding field: eid, with value: 205
+
+INSERT INTO `calendar`.`bookevent` (`event_id`, `event_name`, `start_date`, `end_date` ,`cid`,`eid`  ) 
+										VALUES (NULL, 'New event By:- undefined', '2015-07-07 02:25', '2015-07-07 02:30' , 3 ,205)
+
+Edit operation finished
+0 => action:inserted; sid:1437735276650; tid:1437735276650;
+
+Done in 0.12633395195007s
+
+
+
+====================================
+Log started, 24/07/2015 12:54:43
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+DataProcessor object initialized
+1437735276653_start_date => 2015-07-07 04:25
+1437735276653_end_date => 2015-07-07 07:40
+1437735276653_text => New event By:- undefined
+1437735276653_id => 1437735276653
+1437735276653_!nativeeditor_status => inserted
+ids => 1437735276653
+
+Row data [1437735276653]
+start_date => 2015-07-07 04:25
+end_date => 2015-07-07 07:40
+event_name => New event By:- undefined
+event_id => 1437735276653
+!nativeeditor_status => inserted
+
+adding field: cid, with value: 3
+
+adding field: eid, with value: 205
+
+INSERT INTO `calendar`.`bookevent` (`event_id`, `event_name`, `start_date`, `end_date` ,`cid`,`eid`  ) 
+										VALUES (NULL, 'New event By:- undefined', '2015-07-07 04:25', '2015-07-07 07:40' , 3 ,205)
+
+Edit operation finished
+0 => action:inserted; sid:1437735276653; tid:1437735276653;
+
+Done in 0.083604097366333s
+
+
+
+====================================
+Log started, 24/07/2015 12:54:55
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=2 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 2 AND friends.c_id_2=events.c_id OR friends.c_id_2=2 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.039036989212036s
+
+
+
+====================================
+Log started, 24/07/2015 12:54:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=205)
+
+Done in 0.027520895004272s
+
+
+
+====================================
+Log started, 24/07/2015 12:55:32
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector2.php line 28
+
+SELECT  * FROM bookevent,cus WHERE ( bookevent.cid=cus.c_id and eid=205)
+
+Done in 0.045162200927734s
+
+
+
+====================================
+Log started, 24/07/2015 01:06:53
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.034568071365356s
+
+
+
+====================================
+Log started, 24/07/2015 01:06:58
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.051951885223389s
+
+
+
+====================================
+Log started, 24/07/2015 01:10:01
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.040863990783691s
+
+
+
+====================================
+Log started, 24/07/2015 01:10:12
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.055907011032104s
+
+
+
+====================================
+Log started, 24/07/2015 02:03:16
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.087887048721313s
+
+
+
+====================================
+Log started, 24/07/2015 02:04:47
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.10488891601562s
+
+
+
+====================================
+Log started, 24/07/2015 02:33:32
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=4 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 4 AND friends.c_id_2=events.c_id OR friends.c_id_2=4 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.062114000320435s
+
+
+
+====================================
+Log started, 24/07/2015 02:39:01
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.038290977478027s
+
+
+
+====================================
+Log started, 24/07/2015 02:50:51
+====================================
+
+Undefined index: type at E:\xampp\htdocs\xcal\data\connector.php line 36
+
+SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority`,cus.c_fname FROM events,cus WHERE events.c_id=3 AND events.c_id=cus.c_id UNION SELECT `event_id`,`event_name`,events.`c_id`,`Privacy`,`start_date`,`end_date`,`event_length`,`event_pid`,`rec_type`,`details`,`event_location`,`lat`,`lng`,`readonly`,`priority` ,cus.c_fname FROM events INNER JOIN cus ON cus.c_id=events.c_id INNER JOIN friends on friends.c_id_1= 3 AND friends.c_id_2=events.c_id OR friends.c_id_2=3 AND friends.c_id_1=events.c_id WHERE events.Privacy=2
+
+Done in 0.075406074523926s
+

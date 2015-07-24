@@ -1,11 +1,11 @@
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="stylee1.css">
-   <script src="../bootstrap/jquery/jquery-1.11.2.js"></script> 
+ <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
+
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
 <script type="text/javascript" src="../bootstrap/js/easing.js"></script>
 <script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
- 
- <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script> 
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
         <script>
             $(function(){
   $("#header").load("../header/header.php"); 
@@ -64,7 +64,7 @@
 </div>
 </form>
 
- <a href="../logorreg/passwordsend.php"><font size="2">Forgotten Password</font></a >
+ <a href="../usereg/passwordsend.php"><font size="2">Forgotten Password</font></a >
 
    </td>
   
@@ -88,6 +88,11 @@
 <?php
 include('../database_connection.php');
 session_start();
+if(isset($_GET['err']))
+{
+   echo "<div class='alert alert-danger' role='alert'>Invalid UN/PW combination.Check your Username and Password</div>";
+}
+
 if(isset($_SESSION['login']))
 {
      header("location: ../web/");
@@ -127,8 +132,8 @@ else if($count==1)
 {
 // session_register("myusername");
 $_SESSION['OK']=1;
-$_SESSION['logins']=$row['c_id'];
-$_SESSION['un']=$row['c_fname'];
+$_SESSION['login']=$row['c_id'];
+$_SESSION['name']=$row['c_fname'];
 // echo 'login success';
   // echo "<script type='text/javascript'>window.parent.location.reload(true)</script>";
 // header("location: http://localhost/shop/customer/welcome.php");
@@ -137,7 +142,7 @@ $_SESSION['un']=$row['c_fname'];
   {
     $_SESSION['Admin']=$row['un'];
   }
-header("location: ../home.html");
+header("location: ../web");
 }
 else 
 {

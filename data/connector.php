@@ -1,7 +1,15 @@
 <?php 
 session_start();
 require_once("../codebase/connector/scheduler_connector.php");
- 
+
+//  $mysql_host = "mysql2.000webhost.com";
+// $mysql_database = "a6477626_cal";
+// $mysql_user = "a6477626_admin";
+// $mysql_password = "prolink1250";
+
+// $res=mysql_connect("mysql2.000webhost.com","a6477626_admin","xcalpass123");
+// mysql_select_db("a6477626_cal");
+
 $res=mysql_connect("localhost","root","");
 mysql_select_db("calendar");
 

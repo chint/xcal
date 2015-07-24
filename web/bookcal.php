@@ -34,7 +34,7 @@ include('../checklogin.php');
 include('../database_connection.php');
 
 $c_id=$_SESSION["login"];
-$result = mysqli_query($bd, "SELECT skin FROM `calendar`.`cus` WHERE `c_id` = '$c_id'");
+$result = mysqli_query($bd, "SELECT skin FROM  cus  WHERE `c_id` = '$c_id'");
 if ($row = mysqli_fetch_array($result)) {
 $skin = $row['skin'];
   
@@ -136,27 +136,36 @@ mysqli_close($bd);
 	</style>
 
    <?php
+
+ 
 // session_start();
 include('../database_connection.php');
 // $eid=195;
 $eid=$_GET["eid"];
 // include('../check4frnd.php');
 
-$result = mysqli_query($bd, "SELECT * FROM  events WHERE `privacy` = '3' and event_id=$eid");
+$result = mysqli_query($bd, "SELECT * FROM  events,cus WHERE `privacy` = '3' and event_id=$eid and events.c_id=cus.c_id");
 if ($row = mysqli_fetch_array($result)) {
  
 $event_id=$row['event_id'];
 $event_name=$row['event_name'];
 $start_date=$row['start_date'];
 $end_date=$row['end_date'];
+$owner_name=$row['c_fname']." ".$row['c_lname'];
 // print_r(date_parse_from_format("Y-m-d", $start_date));
 $sd=date_parse_from_format("Y-m-d", $start_date);
 $ed=date_parse_from_format("Y-m-d", $end_date);
-// echo $sd ['year'];
+// $sd=date_parse_from_formatt("yyyy-mm-dd HH:ii:ss", $start_date);
+// $ed=date_parse_from_formatt("yyyy-mm-dd hh:ii:ss", $end_date);
+
 // echo $row['event_id']."-".$row['event_name']."-".$row['start_date']."-".$row['end_date'];
 }else{
 echo ("nothing");
 }
+
+
+
+
 
    ?>
  
@@ -198,7 +207,7 @@ var tag=0;
 					// var desc2=desc.split("--");
 					 if(t.length==1  )
 					 {
-					 	// alert(tag);
+					 	alert(event.c_fname);
 					 	event.text  = scheduler.getEvent(event.id).text + " By:- " + event.c_fname;
 					 	
 					 }
@@ -286,10 +295,13 @@ function block_readonly(id){
 		}
 </script>
 
+
   <div id="calbody"></div>
+
+
 <body onload="init();">
 <!-- <div id="calbody"></div>  -->
- 
+<div class="alert alert-info" role="alert"> Appointment calender of : <?php echo $owner_name;?></div> 
  <!-- <p><a href="#" onclick="scheduler.showEvent(120,'month')">Show event  </a></p> -->
 
 	<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100%; overflow:auto; border: 1px solid #cecece;  '>

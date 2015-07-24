@@ -59,7 +59,7 @@ include('../database_connection.php');
 $a=$_SESSION['login'];
  
  // $a=2;
-$result = mysqli_query($bd, "SELECT * FROM `calendar`.`cus` WHERE `c_id` = '$a' ");
+$result = mysqli_query($bd, "SELECT * FROM  cus WHERE `c_id` = '$a' ");
 
 if ($row = mysqli_fetch_array($result)) {
  

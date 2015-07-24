@@ -44,23 +44,6 @@
 </table>
   </div>
   </div>
-
-<?php
-
- session_start();
- include('../checklogin.php');
-include('../database_connection.php');
-
-$a=$_SESSION['login'];
- 
- // $a=2;
-// $result = mysqli_query($bd, "SELECT * FROM cus WHERE `c_id` = '$a' ");
-$result = mysqli_query($bd, "SELECT * FROM  events WHERE `privacy` = '3' and c_id='$a'");
-if ($row = mysqli_fetch_array($result)) {
- 
-?>
-
-
   <div class="col-md-9 ">
 <div class="well well-sm">
 
@@ -72,6 +55,22 @@ if ($row = mysqli_fetch_array($result)) {
     <td>Start Date</td>
     <td>End Date</td>
 </tr>
+<?php
+
+ session_start();
+ include('../checklogin.php');
+include('../database_connection.php');
+
+$a=$_SESSION['login'];
+ 
+ // $a=2;
+// $result = mysqli_query($bd, "SELECT * FROM cus WHERE `c_id` = '$a' ");
+$result = mysqli_query($bd, "SELECT * FROM  events WHERE `privacy` = '3' and c_id='$a'");
+while ($row = mysqli_fetch_array($result)) {
+ ?>
+
+
+
   <tr> 
     
        <td> <a href="../web/bookcal.php?eid=<?php echo $row['event_id']; ?>"> <?php echo $row['event_name']; ?> </a> </td>
@@ -83,7 +82,7 @@ if ($row = mysqli_fetch_array($result)) {
 <!-- <tr><td>  <label class="control-label" type="password">Password : </label></td>
       <td > <input type="password" value="<?php echo $row['pw']; ?>" readonly="readonly">  </td></tr>
      -->  
-</table>
+
  
  
 <!-- <div class="form-group">
@@ -93,13 +92,11 @@ if ($row = mysqli_fetch_array($result)) {
 
 <!-- </form> -->
 <?php
-} else {
- echo "no results found";
-}
+}  
 
 mysqli_close($bd);
 ?>
-
+</table>
   </div>
   </div>
 </div>

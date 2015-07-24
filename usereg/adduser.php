@@ -10,8 +10,7 @@
 
 
  
- <link href="../formhelper/css/bootstrap-formhelpers.min.css" rel="stylesheet">
- <script src="../formhelper/js/bootstrap-formhelpers.js"></script>
+ 
         <script>
             $(function(){
   $("#header").load("../header/header.php"); 
@@ -34,7 +33,7 @@
   font-size: 16px;
 }
 </style>
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
 <script type="text/javascript">
 $(document).ready(function()//When the dom is ready 
 {

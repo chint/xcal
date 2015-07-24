@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 if(session_destroy())
 {
   
-  header("Location: ../home.html");
+  header("Location: ../index.html");
 }
 }
 

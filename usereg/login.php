@@ -1,5 +1,12 @@
 <html>
-  <link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
+
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
+<script type="text/javascript" src="../bootstrap/js/easing.js"></script>
+<script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 <body>
 
 	<!-- <form role="form-inline" role="form" action="" method="post">
@@ -29,7 +36,7 @@ $pw=mysqli_real_escape_string($bd,$_POST['password']);
 $mypassword=md5($pw);
 
   echo $mypassword ;
-$sql = "SELECT * FROM `calendar`.`cus` WHERE ( `un` LIKE '$userormail' OR `c_email` LIKE '$userormail' ) AND `pw` LIKE '$mypassword'";
+$sql = "SELECT * FROM  cus WHERE ( `un` LIKE '$userormail' OR `c_email` LIKE '$userormail' ) AND `pw` LIKE '$mypassword'";
 $result=mysqli_query($bd,$sql);
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 $count=mysqli_num_rows($result);
@@ -60,7 +67,7 @@ else
 {
 	 echo 'invalid UN/PW combination ' . mysqli_error($bd);
 	 // echo '  <a class="btn btn-default" href="http://localhost/shop/customer/tryagain.php" >Try Again</a> ';
-header("location:  logreg.php");
+header("location:  logreg.php?err=1");
 }
 }
 ?>

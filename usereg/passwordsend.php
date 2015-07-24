@@ -1,11 +1,11 @@
-<link href="http://localhost/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="stylee1.css">
-   <script src="../bootstrap/jquery/jquery-1.11.2.js"></script> 
-<script type="text/javascript" src="http://localhost/bootstrap/js/move-top.js"></script>
+ <script type="text/javascript" src="../js/jquery-1.11.3.js"></script> 
+      <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>  -->
+
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../bootstrap/js/move-top.js"></script>
 <script type="text/javascript" src="../bootstrap/js/easing.js"></script>
 <script type="text/javascript" src="../bootstrap/js/startstop-slider.js"></script>
- 
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
  
         <script>
             $(function(){

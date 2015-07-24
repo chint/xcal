@@ -10,7 +10,7 @@ if(isset($_POST['c_email']))//If a username has been submitted
 $c_email = mysqli_real_escape_string($bd, $_POST['c_email']);//Some clean up :)
 
 
-$sqlq="SELECT * FROM `calendar`.`cus` WHERE `c_email`='$c_email'";
+$sqlq="SELECT * FROM  cus WHERE `c_email`='$c_email'";
 
 $check_for_username = mysqli_query($bd,$sqlq);
 //Query to check if username is available or not 
